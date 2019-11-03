@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 443"
+    "start": "next start"
   },
   "description": "Oryginalna strona główna Rzeczowego Dietetyka (Radom, Mazowieckie). Blog, profesjonalne rady, informacje oraz umawianie wizyt.",
   "dependencies": {
