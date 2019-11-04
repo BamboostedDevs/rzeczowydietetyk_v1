@@ -14,29 +14,24 @@ export default class Layout extends PureComponent {
             href="https://fonts.googleapis.com/css?family=Allerta Stencil"
             rel="stylesheet"
           />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          />
+          <link
+            href="https://fonts.googleapis.com/css?family=Abel&display=swap"
+            rel="stylesheet"
+          ></link>
           <meta
             name="Description"
-            content="Oryginalna strona główna Rzeczowego Dietetyka (Radom, woj. Mazowieckie, Polska). Blog, profesjonalne rady, informacje oraz umawianie wizyt."
+            content="Blog, profesjonalne rady, informacje, umawianie wizyt (Okulickiego, Radom, Polska)"
           />
           <title>Rzeczowy Dietetyk</title>
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#3d5194" />
         </Head>
-        <Provider>
-          <div
-            style={{
-              width: "100%",
-              height: "100%"
-            }}
-          >
-            {children}
-          </div>
-        </Provider>
-        <style jsx global>{`
-          body {
-            margin: 0px;
-          }
-        `}</style>
+        <Provider>{children}</Provider>
+        <style jsx global>{``}</style>
       </div>
     );
   }

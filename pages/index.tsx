@@ -1,14 +1,32 @@
 import { NextPage } from "next";
-import Layout from "../components/Layout";
-import { Grow } from "@material-ui/core";
-import PageIsBeingCreated from "../components/PageIsBeingCreated";
+import dynamic from "next/dynamic";
 
-const Home: NextPage = () => (
+import { StickyContainer, Sticky } from "react-sticky";
+import TrackVisibility from "react-on-screen";
+
+import Home from "../components/Segment/home";
+import Info from "../components/Segment/info";
+import Services from "../components/Segment/services";
+import Contact from "../components/Segment/contact";
+
+import Layout from "../components/Utils/Layout";
+
+const Header = dynamic(() => import("../components/Header"), {
+  ssr: false
+});
+
+const Main: NextPage = () => (
   <Layout>
-    <Grow in={true}>
-      <PageIsBeingCreated />
-    </Grow>
+    <TrackVisibility partialVisibility>
+      <Home />
+    </TrackVisibility>
+    <StickyContainer>
+      <Header />
+      <Info />
+      <Services />
+      <Contact />
+    </StickyContainer>
   </Layout>
 );
 
-export default Home;
+export default Main;

@@ -9,6 +9,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withProgressBar(
-  withOptimizedImages(withCSS(withPurgeCss(nextConfig)))
-);
+module.exports = withProgressBar(withOptimizedImages(withCSS(nextConfig)));
