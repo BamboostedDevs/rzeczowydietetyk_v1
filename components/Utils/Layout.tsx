@@ -23,15 +23,25 @@ export default class Layout extends PureComponent {
             rel="stylesheet"
           ></link>
           <meta
-            name="Description"
-            content="Blog, profesjonalne rady, informacje, umawianie wizyt (Okulickiego, Radom, Polska)"
+            name="description"
+            content="Rzeczowy Dietetyk - Blog, profesjonalne rady, informacje, umawianie wizyt. (Generała Leopolda Okulickiego, Radom, Polska)"
           />
+          <meta
+            name="keywords"
+            content="diety, diets, dietetyk, radom, polska, rzeczowy, dietetyk, rzeczowy dietetyk, Rzeczowy Dietetyk, RzeczowyDietetyk, rzeczowydietetyk.com, RzeczowyDietetyk.com, porady, dietetyczne, poradnia, pomoc, choroby, w, chorobach, nadciśnienie, zaburzenia profilu lipidowego, miażdżyca, alergie, alergia, allergy, pokarmowe, dna, moczanowa, gigrena, insulinoodporność, hipoglikemia, cukrzyca, choroby, autoimmunologiczne, hashimoto, łuszczyca, reumatoidalne, zapalenie, stawów, choroba, gravesa, basedowa, toczeń, rumieniowaty, układowy, nadczynność, niedoczynność, tarczycy, tarczyca, zaburzenia, funkjonowanie, funkcjonowania, układ, pokarmowy, refluks, żołądkowo, przełykowy, żołądek, dwunastniczy, jelia, jelito, drażliwe, drażliwego, zespół, ibs, niealkoholowe, alkohol, stłuszczenie, wątroba, wątroby, niedożywienie, anoreksja, nowotwory, osteoporoza, otyłość, chudnięcie, jak, schudnąć, żywienie, zdrowe, dojelitowe, pozajelitowe, jelitowe, fit"
+          />
+          <meta name="language" content="PL" />
+          <meta name="author" content="Maciej Sułecki" />
           <title>Rzeczowy Dietetyk</title>
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#3d5194" />
         </Head>
         <Provider>{children}</Provider>
-        <style jsx global>{``}</style>
+        <style jsx global>{`
+          body {
+            background-color: rgba(187, 246, 189, 0.5);
+          }
+        `}</style>
       </div>
     );
   }

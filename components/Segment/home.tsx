@@ -14,7 +14,26 @@ export default class Home extends Component<Props> {
 
     return (
       <Segment>
-        <BgAnimation />
+        <div className="row" id="home">
+          <div className="left">
+            <BgAnimation />
+          </div>
+          <div className="right"></div>
+        </div>
+        <style jsx>{`
+          .row {
+            display: flex;
+            width: 100%;
+          }
+
+          .left {
+            flex: 70%;
+          }
+
+          .right {
+            flex: 30%;
+          }
+        `}</style>
       </Segment>
     );
   }

@@ -3,6 +3,10 @@ import Segment from ".";
 
 export default class Contact extends Component {
   render() {
-    return <Segment />;
+    return (
+      <Segment>
+        <div id="contact"></div>
+      </Segment>
+    );
   }
 }

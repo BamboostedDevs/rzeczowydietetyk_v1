@@ -3,6 +3,10 @@ import Segment from ".";
 
 export default class Services extends Component {
   render() {
-    return <Segment />;
+    return (
+      <Segment>
+        <div id="services"></div>
+      </Segment>
+    );
   }
 }
