@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { navbarContainer } from "../../containers/navbar";
 
 type Props = {
   children?: any;
