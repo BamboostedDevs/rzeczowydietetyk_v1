@@ -10,6 +10,7 @@ import Services from "../components/Segment/services";
 import Contact from "../components/Segment/contact";
 
 import Layout from "../components/Utils/Layout";
+import navbarContainer from "../containers/navbar";
 
 const Header = dynamic(() => import("../components/Header"), {
   ssr: false
@@ -22,7 +23,7 @@ const Main: NextPage = () => (
     </TrackVisibility>
     <StickyContainer>
       <Header />
-      <Info />
+      {!(navbarContainer.state.size == "large") && <Info />}
       <Services />
       <Contact />
     </StickyContainer>

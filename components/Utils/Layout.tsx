@@ -36,10 +36,34 @@ export default class Layout extends PureComponent {
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#3d5194" />
         </Head>
-        <Provider>{children}</Provider>
+        <Provider>
+          {children}
+          <script src="/scripts/three.r92.min.js" />
+          <script src="/scripts/vanta.birds.min.js" />
+        </Provider>
         <style jsx global>{`
           body {
             background-color: rgba(187, 246, 189, 0.5);
+          }
+          img {
+            pointer-events: none;
+            cursor: default;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+          .no-select {
+            pointer-events: none;
+            cursor: default;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
           }
         `}</style>
       </div>

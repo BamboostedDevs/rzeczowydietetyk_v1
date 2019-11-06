@@ -1,19 +1,20 @@
 import { FunctionComponent } from "react";
-import { Navbar, Col, Row } from "react-bootstrap";
+import { Navbar, Col, Row, Nav } from "react-bootstrap";
 import { Sticky } from "react-sticky";
-import { navbarContainer } from "../../containers/navbar";
+import navbarContainer from "../../containers/navbar";
+import Navigation from "./Navigation";
 
 const Header: FunctionComponent = () => (
   <Sticky>
     {({ style }) => (
       <div style={style}>
-        {!navbarContainer.state.visible && (
+        {!navbarContainer.state.visible && navbarContainer.state.allow && (
           <Navbar bg="light" variant="light" fixed="top" className="bg">
             <Navbar.Brand
               href="#home"
               style={{
                 fontSize: "2.5vh",
-                padding: "0.5vw 1vw",
+                padding: "0.25vw 0.75vw",
                 wordWrap: "break-word",
                 textAlign: "center"
               }}
@@ -27,7 +28,7 @@ const Header: FunctionComponent = () => (
                       src="https://images.vexels.com/media/users/3/143057/isolated/preview/b96fb3ff9a11216da3f124e69f9e377e-avocado-color-flat-icon-by-vexels.png"
                       className="d-inline-block align-center"
                       style={{
-                        height: "5rem",
+                        height: "4rem",
                         width: "auto"
                       }}
                     />
@@ -39,7 +40,7 @@ const Header: FunctionComponent = () => (
                   <div
                     style={{
                       position: "relative",
-                      left: "50%",
+                      left: "20%",
                       top: "50%",
                       transform: "translate(-50%, -50%)"
                     }}
@@ -50,6 +51,8 @@ const Header: FunctionComponent = () => (
                 </Col>
               </Row>
             </Navbar.Brand>
+            <Nav className="mr-auto" />
+            <Navigation />
             <style jsx global>{`
               .bg {
                 background-color: rgba(255, 250, 240, 0.75) !important;

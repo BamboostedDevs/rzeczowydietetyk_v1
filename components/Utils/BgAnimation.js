@@ -18,7 +18,7 @@ export default class BgAnimation extends React.Component {
         alignment: 49.0,
         cohesion: 30.0,
         quantity: 4.0,
-        backgroundAlpha: 0.81
+        backgroundAlpha: 0.6
       });
     }
   }
@@ -32,10 +32,7 @@ export default class BgAnimation extends React.Component {
         style={{ top: 0, maxHeight: "100vh" }}
         className="BgAnimation"
         ref={this.bgAnimation}
-      >
-        <script src="/scripts/three.r92.min.js" />
-        <script src="/scripts/vanta.birds.min.js" />
-      </div>
+      ></div>
     );
   }
 }
