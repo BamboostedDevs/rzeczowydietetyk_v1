@@ -11,6 +11,7 @@
   "dependencies": {
     "@bit/formidablelabs.react-animations.fade-in-down": "^1.0.0",
     "@material-ui/core": "^4.5.2",
+    "@material-ui/icons": "^4.5.1",
     "@types/node": "^12.12.5",
     "@types/react": "^16.9.11",
     "@types/react-sticky": "^6.0.3",

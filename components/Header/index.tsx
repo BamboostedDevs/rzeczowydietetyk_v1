@@ -9,9 +9,15 @@ const Header: FunctionComponent = () => (
     {({ style }) => (
       <div style={style}>
         {!navbarContainer.state.visible && navbarContainer.state.allow && (
-          <Navbar bg="light" variant="light" fixed="top" className="bg">
+          <Navbar
+            bg="light"
+            variant="light"
+            fixed="top"
+            className="bg"
+            style={{ zIndex: 9999 }}
+          >
             <Navbar.Brand
-              href="#home"
+              href="/"
               style={{
                 fontSize: "2.5vh",
                 padding: "0.25vw 0.75vw",
@@ -56,7 +62,6 @@ const Header: FunctionComponent = () => (
             <style jsx global>{`
               .bg {
                 background-color: rgba(255, 250, 240, 0.75) !important;
-                font-family: "Abel";
               }
             `}</style>
           </Navbar>

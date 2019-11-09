@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+import Home from "./Home";
+import Info from "./Info";
+import Loading from "./Loading";
+import Services from "./Services";
+import Contact from "./Contact";
 
 type Props = {
   children?: any;
 };
 
-export default class Segment extends Component<Props> {
+class Segment extends Component<Props> {
   render() {
     const { children } = this.props;
 
@@ -22,3 +27,5 @@ export default class Segment extends Component<Props> {
     );
   }
 }
+
+export { Home, Info, Loading, Services, Contact, Segment };

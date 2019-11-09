@@ -1,33 +1,60 @@
-import { NextPage } from "next";
 import dynamic from "next/dynamic";
 
-import { StickyContainer, Sticky } from "react-sticky";
+import { StickyContainer } from "react-sticky";
 import TrackVisibility from "react-on-screen";
 
-import Home from "../components/Segment/home";
-import Info from "../components/Segment/info";
-import Services from "../components/Segment/services";
-import Contact from "../components/Segment/contact";
-
-import Layout from "../components/Utils/Layout";
+import Layout from "../components/Layout";
 import navbarContainer from "../containers/navbar";
+import { Component } from "react";
+import { Home, Info, Services, Contact } from "../components/Segment";
 
 const Header = dynamic(() => import("../components/Header"), {
   ssr: false
 });
 
-const Main: NextPage = () => (
-  <Layout>
-    <TrackVisibility partialVisibility>
-      <Home />
-    </TrackVisibility>
-    <StickyContainer>
-      <Header />
-      {!(navbarContainer.state.size == "large") && <Info />}
-      <Services />
-      <Contact />
-    </StickyContainer>
-  </Layout>
-);
+type State = {
+  size: "false" | "large" | "medium" | "small";
+};
 
-export default Main;
+export default class Main extends Component<{}, State> {
+  constructor(props: any) {
+    super(props);
+
+    this.state = { size: "false" };
+  }
+
+  componentDidMount() {
+    var size: "large" | "medium" | "small";
+    const height = window.innerHeight;
+    const width = window.innerWidth;
+    if (height - width < 0) {
+      size = "large";
+    } else if (height - width > 200 && height < 800) {
+      size = "small";
+    } else {
+      size = "medium";
+    }
+    navbarContainer.changeSize(size) && navbarContainer.allow();
+    this.setState({ size: size });
+    console.log(size);
+  }
+  render() {
+    return (
+      <Layout>
+        <div>
+          <TrackVisibility partialVisibility>
+            <Home />
+          </TrackVisibility>
+          <StickyContainer>
+            <Header />
+            {this.state.size != "large" && this.state.size != "false" && (
+              <Info />
+            )}
+            <Services />
+            <Contact />
+          </StickyContainer>
+        </div>
+      </Layout>
+    );
+  }
+}

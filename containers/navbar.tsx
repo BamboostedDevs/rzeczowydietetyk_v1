@@ -6,7 +6,7 @@ type NavbarState = {
   size: string;
 };
 
-class NavbarContainer extends Container<NavbarState> {
+export class NavbarContainer extends Container<NavbarState> {
   state = { visible: false, allow: false, size: "false" };
 
   show() {

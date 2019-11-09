@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import navbarContainer from "../../containers/navbar";
-import Segment from ".";
+import { Segment } from ".";
 import BgAnimation from "../Utils/BgAnimation";
 import { Col, Row, Container } from "react-bootstrap";
-import { MagicSpinner } from "react-spinners-kit";
-import Info from "./info";
+import Info from "./Info";
+import Loading from "./Loading";
 
 type Props = {
   isVisible?: any;
@@ -19,20 +19,7 @@ export default class Home extends Component<Props, State> {
     super(props);
     this.state = {};
   }
-  componentDidMount() {
-    var size: "large" | "medium" | "small";
-    const height = window.innerHeight;
-    const width = window.innerWidth;
-    if (height - width < 0) {
-      size = "large";
-    } else if (height - width > 200 && height < 800) {
-      size = "small";
-    } else {
-      size = "medium";
-    }
-    navbarContainer.changeSize(size) && navbarContainer.allow();
-    console.log(size);
-  }
+
   render() {
     const { isVisible } = this.props;
     isVisible ? navbarContainer.show() : navbarContainer.hide();
@@ -78,7 +65,6 @@ export default class Home extends Component<Props, State> {
                 marginTop: "10vh",
                 marginLeft: "7.5vw",
                 position: "absolute",
-                fontFamily: "Abel",
                 fontSize: "8vw",
                 minWidth: "0vh",
                 maxWidth: "80vw"
@@ -116,7 +102,6 @@ export default class Home extends Component<Props, State> {
                 marginTop: "10vh",
                 marginLeft: "7.5vw",
                 position: "absolute",
-                fontFamily: "Abel",
                 fontSize: "10vw",
                 minWidth: "0vh",
                 maxWidth: "80vw"
@@ -147,18 +132,7 @@ export default class Home extends Component<Props, State> {
             </Container>
           </div>
         ) : (
-          <div
-            style={{
-              backgroundColor: "rgb(73, 158, 249)",
-              width: "100%",
-              height: "100%"
-            }}
-            id="home"
-          >
-            <div className="loader">
-              <MagicSpinner color="rgba(255,255,255, 0.9)" size={200} />
-            </div>
-          </div>
+          <Loading />
         )}
         <style jsx>{`
           .row {
@@ -172,7 +146,6 @@ export default class Home extends Component<Props, State> {
 
           .header {
             font-size: 10vh;
-            font-family: "Abel";
           }
 
           .right {

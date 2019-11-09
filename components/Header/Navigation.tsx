@@ -1,6 +1,10 @@
 import { FunctionComponent } from "react";
-import { Nav } from "react-bootstrap";
+import { Nav, Row } from "react-bootstrap";
 import navbarContainer from "../../containers/navbar";
+import { Breadcrumbs, Link, Typography } from "@material-ui/core";
+import ChromeReaderModeIcon from "@material-ui/icons/ChromeReaderMode";
+import HomeIcon from "@material-ui/icons/Home";
+import CallIcon from "@material-ui/icons/Call";
 
 const Navigation: FunctionComponent = () => {
   return navbarContainer.state.size == "large" ? (
@@ -9,12 +13,37 @@ const Navigation: FunctionComponent = () => {
         fontSize: "1.75rem"
       }}
     >
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="/blog">Blog</Nav.Link>
-      <Nav.Link href="#contact">Contact</Nav.Link>
+      <Breadcrumbs aria-label="breadcrumb">
+        <Link color="textPrimary" href="#home" underline="none">
+          Home
+        </Link>
+        <Link color="textPrimary" href="#services" underline="none">
+          Usługi
+        </Link>
+        <Link color="textPrimary" href="#contact" underline="none">
+          Kontakt
+        </Link>
+        <Typography color="textSecondary">Blog</Typography>
+        {/* <Link color="inherit" href="/blog">
+          Blog
+        </Link> */}
+      </Breadcrumbs>
     </Nav>
   ) : (
-    <div></div>
+    <Breadcrumbs aria-label="breadcrumb">
+      <Link color="textPrimary" href="#home" underline="none">
+        <HomeIcon />
+      </Link>
+      <Typography color="textSecondary">
+        <ChromeReaderModeIcon />
+      </Typography>
+      {/* <Link color="inherit" href="/blog">
+        <ChromeReaderModeIcon />
+      </Link> */}
+      <Link color="textPrimary" href="#contact" underline="none">
+        <CallIcon />
+      </Link>
+    </Breadcrumbs>
   );
 };
 

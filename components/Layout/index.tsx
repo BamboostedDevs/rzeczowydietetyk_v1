@@ -1,7 +1,8 @@
 import React, { PureComponent } from "react";
 import Head from "next/head";
-import { Provider } from "unstated";
+import { Provider, Subscribe } from "unstated";
 import "bootstrap-css-only/css/bootstrap.min.css";
+import navbarContainer from "../../containers/navbar";
 
 export default class Layout extends PureComponent {
   render() {
@@ -35,15 +36,35 @@ export default class Layout extends PureComponent {
           <title>Rzeczowy Dietetyk</title>
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#3d5194" />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-78FPGP5HGS"
+          ></script>
+          <script>
+            {() => {
+              //@ts-ignore
+              window.dataLayer = window.dataLayer || [];
+              //@ts-ignore
+              function gtag() {
+                //@ts-ignore
+                dataLayer.push(arguments);
+              }
+              //@ts-ignore
+              gtag("js", new Date());
+              //@ts-ignore
+              gtag("config", "G-78FPGP5HGS");
+            }}
+          </script>
         </Head>
         <Provider>
-          {children}
+          <Subscribe to={[navbarContainer]}>{container => children}</Subscribe>
           <script src="/scripts/three.r92.min.js" />
           <script src="/scripts/vanta.birds.min.js" />
         </Provider>
         <style jsx global>{`
           body {
             background-color: rgba(187, 246, 189, 0.5);
+            font-family: Abel;
           }
           img {
             pointer-events: none;
