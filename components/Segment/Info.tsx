@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Segment } from ".";
 import { Image } from "react-bootstrap";
+//@ts-ignore
+import Bounce from "react-reveal/Bounce";
+//@ts-ignore
+import Zoom from "react-reveal/Zoom";
 
 export default class Info extends Component {
   render() {
@@ -18,14 +22,16 @@ export default class Info extends Component {
             roundedCircle
           />
           <br />
-          mgr Krzysztof Skuza
+          <Bounce cascade>mgr Krzysztof Skuza</Bounce>
           <div className="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
-            dignissim diam quis enim lobortis scelerisque fermentum dui. Et
-            magnis dis parturient montes nascetur ridiculus mus mauris vitae.
-            Orci dapibus ultrices in iaculis nunc sed. Ac turpis egestas integer
-            eget aliquet nibh.
+            <Zoom bottom cascade>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
+              dignissim diam quis enim lobortis scelerisque fermentum dui. Et
+              magnis dis parturient montes nascetur ridiculus mus mauris vitae.
+              Orci dapibus ultrices in iaculis nunc sed. Ac turpis egestas
+              integer eget aliquet nibh.
+            </Zoom>
           </div>
         </div>
         <style jsx>

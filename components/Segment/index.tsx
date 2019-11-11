@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Home from "./Home";
 import Info from "./Info";
-import Loading from "./Loading";
+import Loading from "../Utils/Loading";
 import Services from "./Services";
 import Contact from "./Contact";
 

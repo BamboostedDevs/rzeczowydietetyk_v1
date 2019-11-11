@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import navbarContainer from "../containers/navbar";
 import { Component } from "react";
 import { Home, Info, Services, Contact } from "../components/Segment";
+import { Subscribe } from "unstated";
 
 const Header = dynamic(() => import("../components/Header"), {
   ssr: false
@@ -46,12 +47,18 @@ export default class Main extends Component<{}, State> {
             <Home />
           </TrackVisibility>
           <StickyContainer>
-            <Header />
             {this.state.size != "large" && this.state.size != "false" && (
               <Info />
             )}
             <Services />
             <Contact />
+            <Subscribe to={[navbarContainer]}>
+              {container => (
+                <Header
+                  render={!container.state.visible && container.state.allow}
+                />
+              )}
+            </Subscribe>
           </StickyContainer>
         </div>
       </Layout>
