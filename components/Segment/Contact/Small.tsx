@@ -71,7 +71,7 @@ function Small() {
         </Zoom>
       </Container>
       <Container>
-        <Zoom bottom cascade>
+        <Zoom bottom cascade duration={2000}>
           <div
             style={{
               textAlign: "center",
