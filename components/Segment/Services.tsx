@@ -5,7 +5,9 @@ export default class Services extends Component {
   render() {
     return (
       <Segment>
-        <div id="services"></div>
+        <div id="services">
+          Tu będzie oferta - świadczone usługi (i inne tło)
+        </div>
         <style jsx>{`
           #services {
             background: url(/vegetables.jpg) rgba(187, 246, 189, 0.5);
@@ -13,6 +15,8 @@ export default class Services extends Component {
             background-blend-mode: darken;
             width: 100%;
             height: 101%;
+            text-align: center;
+            font-size: 7.5vh;
           }
         `}</style>
       </Segment>

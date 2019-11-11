@@ -4,10 +4,11 @@ type NavbarState = {
   visible: boolean;
   allow: boolean;
   size: string;
+  done: boolean;
 };
 
 export class NavbarContainer extends Container<NavbarState> {
-  state = { visible: false, allow: false, size: "false" };
+  state = { visible: false, allow: false, size: "false", done: false };
 
   show() {
     this.setState({ visible: true });

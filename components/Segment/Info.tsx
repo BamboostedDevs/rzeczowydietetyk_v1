@@ -5,35 +5,48 @@ import { Image } from "react-bootstrap";
 import Bounce from "react-reveal/Bounce";
 //@ts-ignore
 import Zoom from "react-reveal/Zoom";
+import navbarContainer from "../../containers/navbar";
+import { Subscribe } from "unstated";
 
 export default class Info extends Component {
   render() {
     return (
       <Segment>
-        <div id="info">
-          <Image
-            src="/vegetables.jpg"
-            style={{
-              width: "20vh",
-              height: "20vh",
-              marginBottom: "3vh",
-              marginTop: "10vh"
-            }}
-            roundedCircle
-          />
-          <br />
-          <Bounce cascade>mgr Krzysztof Skuza</Bounce>
-          <div className="description">
-            <Zoom bottom cascade>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
-              dignissim diam quis enim lobortis scelerisque fermentum dui. Et
-              magnis dis parturient montes nascetur ridiculus mus mauris vitae.
-              Orci dapibus ultrices in iaculis nunc sed. Ac turpis egestas
-              integer eget aliquet nibh.
-            </Zoom>
-          </div>
-        </div>
+        <Subscribe to={[navbarContainer]}>
+          {container => (
+            <div id="info">
+              <Image
+                src="/vegetables.jpg"
+                style={{
+                  width: "20vh",
+                  height: "20vh",
+                  marginBottom: "3vh",
+                  marginTop: "10vh"
+                }}
+                roundedCircle
+              />
+              <br />
+              <Bounce
+                when={
+                  navbarContainer.state.size == "large"
+                    ? navbarContainer.state.done
+                    : undefined
+                }
+              >
+                mgr Krzysztof Skuza
+                <div className="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Etiam dignissim diam quis enim lobortis scelerisque fermentum
+                  dui. Et magnis dis parturient montes nascetur ridiculus mus
+                  mauris vitae. Orci dapibus ultrices in iaculis nunc sed. Ac
+                  turpis egestas integer eget aliquet nibh.
+                </div>
+              </Bounce>
+            </div>
+          )}
+        </Subscribe>
+
         <style jsx>
           {`
             #info {
