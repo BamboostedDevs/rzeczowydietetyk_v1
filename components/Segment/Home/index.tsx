@@ -34,7 +34,7 @@ export default class Home extends Component<Props, State> {
         ) : navbarContainer.state.size == "small" ? (
           <Small />
         ) : (
-          <Loading />
+          <div />
         )}
       </Segment>
     );

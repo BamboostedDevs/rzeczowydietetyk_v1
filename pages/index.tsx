@@ -6,7 +6,7 @@ import TrackVisibility from "react-on-screen";
 import Layout from "../components/Layout";
 import navbarContainer from "../containers/navbar";
 import { Component } from "react";
-import { Home, Info, Services, Contact } from "../components/Segment";
+import { Home, Info, Services, Contact, Loading } from "../components/Segment";
 import { Subscribe } from "unstated";
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -15,13 +15,14 @@ const Header = dynamic(() => import("../components/Header"), {
 
 type State = {
   size: "false" | "large" | "medium" | "small";
+  done: boolean;
 };
 
 export default class Main extends Component<{}, State> {
   constructor(props: any) {
     super(props);
 
-    this.state = { size: "false" };
+    this.state = { size: "false", done: false };
   }
 
   componentDidMount() {
@@ -38,10 +39,27 @@ export default class Main extends Component<{}, State> {
     navbarContainer.changeSize(size) && navbarContainer.allow();
     this.setState({ size: size });
     console.log(size);
+    setTimeout(() => this.setState({ done: true }), 3000);
   }
   render() {
     return (
       <Layout>
+        {!this.state.done && (
+          <div
+            style={{
+              left: 0,
+              top: 0,
+              position: "fixed",
+              height: "100vh",
+              width: "100vw",
+              zIndex: 999,
+              backgroundColor: "rgb(112,182,241)",
+              fill: "rgb(112,182,241)"
+            }}
+          >
+            <Loading />
+          </div>
+        )}
         <div>
           <TrackVisibility partialVisibility>
             <Home />

@@ -120,8 +120,9 @@ export default class Contact extends Component {
           </Row>
         </div>
         <Slide bottom>
-          <img src="/mountains.svg" />
+          <img src="/mountains.svg" style={{ left: 0 }} />
         </Slide>
+        {/* <Footer/> */}
         <style jsx>{`
           #contact {
             text-align: center;
