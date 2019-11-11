@@ -22,7 +22,7 @@ function Small() {
             Lokalizacja
           </Row>
         </Zoom>
-        <Zoom right cascade>
+        <Zoom right cascade duration={1500}>
           <div style={{ marginLeft: "3vw" }}>
             <Row style={{ fontSize: "3vh", marginTop: "5vh" }}>
               ul. Generała Leopolda Okulickiego 76
@@ -60,7 +60,7 @@ function Small() {
             Godziny Otwarcia:
           </Row>
         </Zoom>
-        <Zoom left cascade>
+        <Zoom left cascade duration={1500}>
           <div style={{ marginLeft: "3vw" }}>
             <Row style={{ fontSize: "3vh", marginTop: "2.5vh" }}>
               Poniedziałek: godz. 14-20

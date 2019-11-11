@@ -1,15 +1,12 @@
 import React, { Component } from "react";
 import navbarContainer from "../../../containers/navbar";
-import BgAnimation from "../../Utils/BgAnimation";
 import { Segment } from "../";
-import Loading from "../../Utils/Loading";
-import { Col, Row, Container } from "react-bootstrap";
 import Large from "./Large";
-import Medium from "./Medium";
 import Small from "./Small";
 
 type Props = {
   isVisible?: any;
+  size: "large" | "medium" | "small" | "false";
 };
 type State = {
   height?: number;
@@ -23,19 +20,22 @@ export default class Home extends Component<Props, State> {
   }
 
   render() {
-    const { isVisible } = this.props;
+    const { isVisible, size } = this.props;
     isVisible ? navbarContainer.show() : navbarContainer.hide();
     return (
       <Segment>
-        {navbarContainer.state.size == "large" ? (
-          <Large />
-        ) : navbarContainer.state.size == "medium" ? (
-          <Medium />
-        ) : navbarContainer.state.size == "small" ? (
-          <Small />
-        ) : (
-          <div />
-        )}
+        <div style={{ backgroundColor: "rgb(112,182,241)" }}>
+          {size == "large" ? <Large /> : <Small />}
+          <style jsx>
+            {`
+              #home {
+                font-size: 5vh;
+                text-align: center;
+                background-color: rgb(112, 182, 241);
+              }
+            `}
+          </style>
+        </div>
       </Segment>
     );
   }

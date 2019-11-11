@@ -10,17 +10,17 @@ export default class Contact extends Component {
   render() {
     return (
       <Segment>
-        {navbarContainer.state.size == "large" ? (
-          <Large />
-        ) : navbarContainer.state.size == "small" ? (
-          <Small />
-        ) : (
-          <div />
-        )}
-        <Slide bottom>
-          <img src="/mountains.svg" style={{ left: 0 }} />
-        </Slide>
-        {/* <Footer/> */}
+        <div
+          style={{
+            backgroundColor: "rgba(187, 246, 189, 0.5)"
+          }}
+        >
+          {navbarContainer.state.size == "large" ? <Large /> : <Small />}
+          <Slide bottom>
+            <img src="/mountains.svg" style={{ left: 0 }} />
+          </Slide>
+          {/* <Footer/> */}
+        </div>
       </Segment>
     );
   }

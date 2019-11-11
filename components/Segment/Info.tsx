@@ -32,6 +32,7 @@ export default class Info extends Component {
                     ? navbarContainer.state.done
                     : undefined
                 }
+                duration={1500}
               >
                 mgr Krzysztof Skuza
                 <div className="description">
@@ -54,10 +55,11 @@ export default class Info extends Component {
               text-align: center;
             }
             .description {
-              font-size: 3vh;
+              font-size: 2.75vh;
               margin-top: 7.5vh;
               margin-left: 2vw;
               margin-right: 2vw;
+              font-family: Raleway;
             }
           `}
         </style>

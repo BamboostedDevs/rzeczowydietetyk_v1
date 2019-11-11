@@ -18,29 +18,29 @@ function Large() {
           }}
         >
           <Zoom bottom>Lokalizacja</Zoom>
-          <Zoom right cascade>
-            <div>
-              <Row style={{ fontSize: "3vh", marginTop: "5vh" }}>
+          <Zoom right cascade duration={1500}>
+            <div style={{ fontFamily: "Raleway" }}>
+              <Row style={{ fontSize: "2.5vh", marginTop: "5vh" }}>
                 ul. Generała Leopolda Okulickiego 76
               </Row>
-              <Row style={{ fontSize: "2.5vh" }}>
+              <Row style={{ fontSize: "2.25vh" }}>
                 (wewnątrz przychodni Polmedic)
               </Row>
               <Row style={{ fontSize: "2vh" }}>w Radomiu</Row>
             </div>
           </Zoom>
           <Zoom bottom>
-            <Row style={{ fontSize: "4.5vh", marginTop: "2.5vh" }}>
+            <Row style={{ fontSize: "4.25vh", marginTop: "2.5vh" }}>
               Godziny Otwarcia:
             </Row>
           </Zoom>
-          <Zoom right cascade>
-            <div>
-              <Row style={{ fontSize: "3vh", marginTop: "2.5vh" }}>
+          <Zoom right cascade duration={1500}>
+            <div style={{ fontFamily: "Raleway" }}>
+              <Row style={{ fontSize: "2.75vh", marginTop: "2.5vh" }}>
                 Poniedziałek: godz. 14-20
               </Row>
-              <Row style={{ fontSize: "3vh" }}>Czwartek: godz. 14-20</Row>
-              <Row style={{ fontSize: "3vh" }}>Piątek: godz. 14-20</Row>
+              <Row style={{ fontSize: "2.75vh" }}>Czwartek: godz. 14-20</Row>
+              <Row style={{ fontSize: "2.75vh" }}>Piątek: godz. 14-20</Row>
             </div>
           </Zoom>
         </Col>
@@ -66,15 +66,16 @@ function Large() {
             textAlign: "center"
           }}
         >
-          <Zoom bottom cascade>
+          <Zoom bottom cascade duration={1500}>
             <div>
               <div>Kontakt</div>
               <EmailIcon style={{ fontSize: "10vh", marginTop: "5vh" }} />
               <Row
                 style={{
-                  fontSize: "2.5vh",
+                  fontSize: "2.25vh",
                   minWidth: "5vw",
-                  width: "100%"
+                  width: "100%",
+                  fontFamily: "Raleway"
                 }}
               >
                 <Link
@@ -92,7 +93,7 @@ function Large() {
               <PhoneIcon style={{ fontSize: "10vh", marginTop: "5vh" }} />
               <Row
                 style={{
-                  fontSize: "3vh",
+                  fontSize: "2.75vh",
                   minWidth: "5vw"
                 }}
               >

@@ -31,7 +31,7 @@ export default class Main extends Component<{}, State> {
     const width = window.innerWidth;
     if (height - width < 0) {
       size = "large";
-    } else if (height - width > 200 && height < 800) {
+    } else if (height - width > 100 && height < 820) {
       size = "small";
     } else {
       size = "medium";
@@ -65,7 +65,7 @@ export default class Main extends Component<{}, State> {
         )}
         <div>
           <TrackVisibility partialVisibility>
-            <Home />
+            <Home size={this.state.size} />
           </TrackVisibility>
           <StickyContainer>
             {this.state.size != "large" && this.state.size != "false" && (

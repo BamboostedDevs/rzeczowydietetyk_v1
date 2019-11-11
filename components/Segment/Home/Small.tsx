@@ -3,7 +3,14 @@ import BgAnimation from "../../Utils/BgAnimation";
 
 function Small() {
   return (
-    <div style={{ maxHeight: "100vh", width: "100vw" }} id="home">
+    <div
+      style={{
+        maxHeight: "100vh",
+        width: "100vw",
+        backgroundColor: "rgb(112,182,241)"
+      }}
+      id="home"
+    >
       <BgAnimation />
       <Container
         style={{
