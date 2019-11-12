@@ -41,7 +41,7 @@ export default class Info extends Component {
                   Etiam dignissim diam quis enim lobortis scelerisque fermentum
                   dui. Et magnis dis parturient montes nascetur ridiculus mus
                   mauris vitae. Orci dapibus ultrices in iaculis nunc sed. Ac
-                  turpis egestas integer eget aliquet nibh.
+                  turpis egestas integer eget aliquet nibh."
                 </div>
               </Bounce>
             </div>
@@ -59,7 +59,7 @@ export default class Info extends Component {
               margin-top: 7.5vh;
               margin-left: 2vw;
               margin-right: 2vw;
-              font-family: Raleway;
+              font-family: Lato;
             }
           `}
         </style>

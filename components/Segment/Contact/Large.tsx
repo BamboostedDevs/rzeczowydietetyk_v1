@@ -19,7 +19,7 @@ function Large() {
         >
           <Zoom bottom>Lokalizacja</Zoom>
           <Zoom right cascade duration={1500}>
-            <div style={{ fontFamily: "Raleway" }}>
+            <div style={{ fontFamily: "Lato" }}>
               <Row style={{ fontSize: "2.5vh", marginTop: "5vh" }}>
                 ul. Generała Leopolda Okulickiego 76
               </Row>
@@ -35,7 +35,7 @@ function Large() {
             </Row>
           </Zoom>
           <Zoom right cascade duration={1500}>
-            <div style={{ fontFamily: "Raleway" }}>
+            <div style={{ fontFamily: "Lato" }}>
               <Row style={{ fontSize: "2.75vh", marginTop: "2.5vh" }}>
                 Poniedziałek: godz. 14-20
               </Row>
@@ -75,7 +75,7 @@ function Large() {
                   fontSize: "2.25vh",
                   minWidth: "5vw",
                   width: "100%",
-                  fontFamily: "Raleway"
+                  fontFamily: "Lato"
                 }}
               >
                 <Link
@@ -118,7 +118,7 @@ function Large() {
           text-align: center;
           max-width: 100vw;
           font-size: 7.5vh;
-          margin-bottom: -7vh;
+          margin-bottom: -6vh;
         }
       `}</style>
     </div>

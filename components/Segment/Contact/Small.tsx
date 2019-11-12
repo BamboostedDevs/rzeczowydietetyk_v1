@@ -82,7 +82,9 @@ function Small() {
             }}
           >
             <div>Kontakt</div>
-            <EmailIcon style={{ fontSize: "10vh", marginTop: "5vh" }} />
+            <a href="mailto:krzysztof.skuza@rzeczowydietetyk.com">
+              <EmailIcon style={{ fontSize: "10vh", marginTop: "5vh" }} />
+            </a>
             <Row
               style={{
                 fontSize: "2.5vh",
@@ -102,7 +104,9 @@ function Small() {
                 krzysztof.skuza@rzeczowydietetyk.com
               </Link>
             </Row>
-            <PhoneIcon style={{ fontSize: "10vh", marginTop: "5vh" }} />
+            <a href="tel:+48721550102">
+              <PhoneIcon style={{ fontSize: "10vh", marginTop: "5vh" }} />
+            </a>
             <Row
               style={{
                 fontSize: "3vh",

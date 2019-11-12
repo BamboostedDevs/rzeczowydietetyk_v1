@@ -19,7 +19,7 @@ export default class Services extends Component {
             style={{
               backgroundColor: "white",
               textAlign: "left",
-              fontFamily: "Raleway"
+              fontFamily: "Lato"
             }}
           >
             <Row>Tu będzie oferta - świadczone usługi (i inne tło)</Row>

@@ -16,7 +16,7 @@ export default class Layout extends PureComponent {
             rel="stylesheet"
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
             rel="stylesheet"
           />
           <link
@@ -38,7 +38,7 @@ export default class Layout extends PureComponent {
           <meta name="language" content="PL" />
           <meta name="author" content="Maciej Sułecki" />
           <title>Rzeczowy Dietetyk</title>
-          <meta charSet="utf-8" />
+          <meta charSet="UTF-8" />
           <meta name="theme-color" content="#3d5194" />
           <script
             async
