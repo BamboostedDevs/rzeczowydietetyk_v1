@@ -31,12 +31,18 @@ export default class Layout extends PureComponent {
             property="og:description"
             content="Dietetyk kliniczny - Kontakt, blog, informacje i umawianie wizyt"
           ></meta>
-          <meta property="og:url" content="https://rzeczowydietetyk.com/" />
+          <meta
+            property="og:url"
+            content="https://rzeczowydietetyk.beeinger.now.sh/"
+          />
           <meta property="og:image" content="/vegetables.jpg"></meta>
           <meta property="og:locale" content="pl_PL" />
           <meta name="language" content="PL" />
           <meta name="author" content="bamboosted team" />
-          <meta name="theme-color" content="#3d5194" />
+          <meta name="theme-color" content="#70b6f1" />
+          <meta name="msapplication-TileColor" content="#70b6f1" />
+          <meta name="msapplication-TileImage" content="/favicon-144.png" />
+          <meta name="msapplication-config" content="/browserconfig.xml" />
           <link
             href="https://fonts.googleapis.com/css?family=Allerta Stencil"
             rel="stylesheet"
