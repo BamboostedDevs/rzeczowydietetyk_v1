@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import navbarContainer from "../../../containers/navbar";
-import { Segment } from "../";
+import { Segment } from "..";
 import Large from "./Large";
 import Small from "./Small";
 

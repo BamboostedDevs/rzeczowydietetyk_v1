@@ -1,4 +1,4 @@
-import { Col, Row, Container } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 //@ts-ignore
 import Zoom from "react-reveal/Zoom";
 //@ts-ignore

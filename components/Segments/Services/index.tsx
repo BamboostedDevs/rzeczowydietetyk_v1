@@ -1,20 +1,32 @@
 import React, { Component } from "react";
-import { Segment } from ".";
+import { Segment } from "..";
 import { Container, Row } from "react-bootstrap";
-import navbarContainer from "../../containers/navbar";
+import navbarContainer from "../../../containers/navbar";
 
-export default class Services extends Component {
+type State = {
+  open?: boolean;
+};
+
+export default class Services extends Component<{}, State> {
+  constructor(props: any) {
+    super(props);
+
+    this.state = {
+      open: true
+    };
+  }
+
   render() {
     return (
-      <Segment>
-        <div
-          id="services"
-          style={
-            navbarContainer.state.size == "small"
-              ? { fontSize: "2vh" }
-              : { fontSize: "4.5vh" }
-          }
-        >
+      <div
+        id="services"
+        style={
+          navbarContainer.state.size == "small"
+            ? { fontSize: "2vh" }
+            : { fontSize: "4.5vh" }
+        }
+      >
+        <Segment>
           <Container
             style={{
               backgroundColor: "white",
@@ -40,18 +52,20 @@ export default class Services extends Component {
             </Row>
             <Row>Z blogiem jeszcze zejdzie troche</Row>
           </Container>
-        </div>
+        </Segment>
+        <Segment></Segment>
         <style jsx>{`
           #services {
             background: url(/vegetables.jpg) rgba(187, 246, 189, 0.5);
             background-size: cover;
             background-blend-mode: darken;
+            background-attachment: fixed;
             width: 100%;
-            height: 101%;
+            height: 300vh;
             text-align: center;
           }
         `}</style>
-      </Segment>
+      </div>
     );
   }
 }

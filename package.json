@@ -7,6 +7,18 @@
     "build": "next build",
     "start": "next start"
   },
+  "keywords": [
+    "dietetyk",
+    "rzeczowy",
+    "rzeczowy dietetyk",
+    "rzeczowydietetyk",
+    "RzeczowyDietetyk",
+    "Rzeczowy Dietetyk",
+    "dieta",
+    "diet"
+  ],
+  "author": "Maciej Sułecki",
+  "license": "© All rights reserved.",
   "description": "Oryginalna strona główna Rzeczowego Dietetyka (Radom, Mazowieckie). Blog, profesjonalne rady, informacje oraz umawianie wizyt.",
   "dependencies": {
     "@bit/formidablelabs.react-animations.fade-in-down": "^1.0.0",
@@ -20,6 +32,7 @@
     "bootstrap": "^4.3.1",
     "bootstrap-css-only": "^4.3.1",
     "imagemin-optipng": "^7.1.0",
+    "material-auto-rotating-carousel": "^3.0.2",
     "next": "9.1.2",
     "next-optimized-images": "^2.5.4",
     "next-progressbar": "^1.0.0",
@@ -33,6 +46,7 @@
     "react-spinners-kit": "^1.9.0",
     "react-sticky": "^6.0.3",
     "react-swipeable": "^5.4.0",
+    "react-swipeable-views": "^0.13.3",
     "shuffle-array": "^1.0.1",
     "styled-components": "^4.4.1",
     "typescript": "^3.6.4",

@@ -1,6 +1,6 @@
 import { Col, Row, Container } from "react-bootstrap";
 import BgAnimation from "../../Utils/BgAnimation";
-import { Info } from "../";
+import { Info } from "..";
 
 function Large() {
   return (

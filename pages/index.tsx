@@ -6,7 +6,7 @@ import TrackVisibility from "react-on-screen";
 import Layout from "../components/Layout";
 import navbarContainer from "../containers/navbar";
 import { Component } from "react";
-import { Home, Info, Services, Contact, Loading } from "../components/Segment";
+import { Home, Info, Services, Contact, Loading } from "../components/Segments";
 import { Subscribe } from "unstated";
 
 const Header = dynamic(() => import("../components/Header"), {

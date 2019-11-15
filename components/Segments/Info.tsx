@@ -3,8 +3,6 @@ import { Segment } from ".";
 import { Image } from "react-bootstrap";
 //@ts-ignore
 import Bounce from "react-reveal/Bounce";
-//@ts-ignore
-import Zoom from "react-reveal/Zoom";
 import navbarContainer from "../../containers/navbar";
 import { Subscribe } from "unstated";
 
