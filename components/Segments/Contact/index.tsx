@@ -20,7 +20,9 @@ export default class Contact extends Component {
         <style jsx>{`
           .contact {
             background-image: linear-gradient(
-              rgba(187, 246, 189, 0.5) 0%,
+              rgba(220, 250, 221, 1) 0%,
+              rgba(220, 250, 221, 0.75) 7.5%,
+              rgba(220, 250, 221, 0.5) 15%,
               rgba(112, 182, 241, 0.75) 60%,
               rgba(112, 182, 241, 1) 100%
             );

@@ -1,12 +1,10 @@
-const withCSS = require("@zeit/next-css");
-const withOptimizedImages = require("next-optimized-images");
-const withPurgeCss = require("next-purgecss");
-const withProgressBar = require("next-progressbar");
+const withPlugins = require("next-compose-plugins");
+const CSS = require("@zeit/next-css");
+const optimizedImages = require("next-optimized-images");
+const progressBar = require("next-progressbar");
 
-const nextConfig = {
-  cssLoaderOptions: {
-    url: false
-  }
-};
-
-module.exports = withProgressBar(withOptimizedImages(withCSS(nextConfig)));
+module.exports = withPlugins([
+  [optimizedImages, {}],
+  [progressBar, {}],
+  [CSS, { url: false }]
+]);

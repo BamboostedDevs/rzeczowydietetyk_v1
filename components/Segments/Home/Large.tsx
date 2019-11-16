@@ -14,7 +14,7 @@ function Large() {
               <Row>
                 <img
                   alt="logo"
-                  src="https://images.vexels.com/media/users/3/143057/isolated/preview/b96fb3ff9a11216da3f124e69f9e377e-avocado-color-flat-icon-by-vexels.png"
+                  src="/avocadoT.svg"
                   className="d-inline-block align-center"
                   style={{
                     height: "17rem",
