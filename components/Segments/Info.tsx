@@ -51,6 +51,7 @@ export default class Info extends Component {
             #info {
               font-size: 5vh;
               text-align: center;
+              background-color: rgb(112, 182, 241);
             }
             .description {
               font-size: 2.75vh;
@@ -58,6 +59,7 @@ export default class Info extends Component {
               margin-left: 2vw;
               margin-right: 2vw;
               font-family: Lato;
+              padding-bottom: 5vh;
             }
           `}
         </style>

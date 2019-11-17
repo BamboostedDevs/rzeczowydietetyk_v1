@@ -15,7 +15,7 @@ function Small() {
           <Row
             style={{
               fontSize: "7.5vh",
-              marginTop: "15vh",
+              paddingTop: "15vh",
               marginLeft: "2.5vw"
             }}
           >

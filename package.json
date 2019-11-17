@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "npm run build && next export"
   },
   "keywords": [
     "dietetyk",
@@ -37,6 +38,7 @@
     "material-auto-rotating-carousel": "^3.0.2",
     "next": "9.1.2",
     "next-compose-plugins": "^2.2.0",
+    "next-offline": "^4.0.6",
     "next-optimized-images": "^2.5.4",
     "next-progressbar": "^1.0.0",
     "next-purgecss": "^3.1.1",

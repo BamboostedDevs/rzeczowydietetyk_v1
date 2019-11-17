@@ -1,5 +1,3 @@
-import { Segment } from "..";
-
 function Large() {
   return (
     <div>

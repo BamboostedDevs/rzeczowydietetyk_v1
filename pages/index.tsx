@@ -64,9 +64,11 @@ export default class Main extends Component<{}, State> {
           </div>
         )}
         <div>
-          <TrackVisibility partialVisibility>
-            <Home size={this.state.size} />
-          </TrackVisibility>
+          <div style={{ backgroundColor: "rgb(112, 182, 241)" }}>
+            <TrackVisibility partialVisibility>
+              <Home size={this.state.size} />
+            </TrackVisibility>
+          </div>
           <StickyContainer>
             {this.state.size != "large" && this.state.size != "false" && (
               <Info />

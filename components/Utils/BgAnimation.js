@@ -10,15 +10,14 @@ export default class BgAnimation extends React.Component {
     if (typeof window !== undefined) {
       this.effect = VANTA.BIRDS({
         el: bgAnimation,
-        backgroundColor: 0x2889ff,
+        backgroundColor: 0x459bf9,
         color1: 0xff2d,
         color2: 0xffc200,
         birdSize: 1,
         separation: 47.0,
         alignment: 49.0,
         cohesion: 30.0,
-        quantity: 4.0,
-        backgroundAlpha: 0.6
+        quantity: 4.0
       });
     }
   }
