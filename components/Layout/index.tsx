@@ -2,12 +2,22 @@ import React, { PureComponent } from "react";
 import { Provider, Subscribe } from "unstated";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import navbarContainer from "../../containers/navbar";
+import Head from "next/head";
 
-export default class Layout extends PureComponent {
+type Props = {
+  children: object;
+};
+
+export default class Layout extends PureComponent<Props> {
   render() {
     const { children } = this.props;
     return (
-      <div>
+      <>
+        <Head>
+          <title>
+            Rzeczowy Dietetyk - Kontakt, blog, info - RzeczowyDietetyk, Radom
+          </title>
+        </Head>
         <Provider>
           <Subscribe to={[navbarContainer]}>{container => children}</Subscribe>
           <script src="/scripts/three.r92.min.js" />
@@ -39,7 +49,7 @@ export default class Layout extends PureComponent {
             user-select: none;
           }
         `}</style>
-      </div>
+      </>
     );
   }
 }

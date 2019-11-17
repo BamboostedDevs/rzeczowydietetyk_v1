@@ -5,8 +5,8 @@ import Large from "./Large";
 import Small from "./Small";
 
 type Props = {
-  isVisible?: any;
-  size: "large" | "medium" | "small" | "false";
+  isVisible?: boolean;
+  size: "large" | "medium" | "small" | boolean;
 };
 type State = {
   height?: number;
@@ -14,7 +14,7 @@ type State = {
 };
 
 export default class Home extends Component<Props, State> {
-  constructor(props: any) {
+  constructor(props: Props) {
     super(props);
     this.state = {};
   }

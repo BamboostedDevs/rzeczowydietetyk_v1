@@ -14,7 +14,7 @@ const Header = dynamic(() => import("../components/Header"), {
 });
 
 type State = {
-  size: "false" | "large" | "medium" | "small";
+  size: boolean | "large" | "medium" | "small";
   done: boolean;
 };
 
@@ -22,7 +22,7 @@ export default class Main extends Component<{}, State> {
   constructor(props: any) {
     super(props);
 
-    this.state = { size: "false", done: false };
+    this.state = { size: false, done: false };
   }
 
   componentDidMount() {
@@ -70,9 +70,7 @@ export default class Main extends Component<{}, State> {
             </TrackVisibility>
           </div>
           <StickyContainer>
-            {this.state.size != "large" && this.state.size != "false" && (
-              <Info />
-            )}
+            {this.state.size && this.state.size != "large" && <Info />}
             <Services />
             <Contact />
             <Subscribe to={[navbarContainer]}>

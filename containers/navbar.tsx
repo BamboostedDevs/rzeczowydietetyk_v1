@@ -3,12 +3,15 @@ import { Container } from "unstated";
 type NavbarState = {
   visible: boolean;
   allow: boolean;
-  size: string;
+  size: boolean | "large" | "medium" | "small";
   done: boolean;
 };
 
 export class NavbarContainer extends Container<NavbarState> {
-  state = { visible: false, allow: false, size: "false", done: false };
+  constructor() {
+    super();
+    this.state = { visible: false, allow: false, size: false, done: false };
+  }
 
   show() {
     this.setState({ visible: true });

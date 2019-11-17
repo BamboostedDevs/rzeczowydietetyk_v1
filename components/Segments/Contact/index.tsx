@@ -15,8 +15,8 @@ export default class Contact extends Component {
           <Slide bottom>
             <img src="/mountains.svg" style={{ left: 0 }} />
           </Slide>
-          {navbarContainer.state.size != "large" &&
-            navbarContainer.state.size != "false" && (
+          {navbarContainer.state.size &&
+            navbarContainer.state.size != "large" && (
               <div
                 style={{ height: "10vh", backgroundColor: "rgb(247,163,62)" }}
               />

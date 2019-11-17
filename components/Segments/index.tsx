@@ -6,7 +6,7 @@ import Services from "./Services";
 import Contact from "./Contact";
 
 type Props = {
-  children?: any;
+  children?: object;
 };
 
 class Segment extends Component<Props> {

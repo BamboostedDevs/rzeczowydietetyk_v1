@@ -1,6 +1,6 @@
 function Large() {
   return (
-    <div>
+    <>
       <div className="officeWeb">
         <div style={{ height: "40vh" }} />
         <div
@@ -43,7 +43,7 @@ function Large() {
           }
         `}
       </style>
-    </div>
+    </>
   );
 }
 

@@ -3,19 +3,7 @@ import navbarContainer from "../../../containers/navbar";
 import Large from "./Large";
 import Small from "./Small";
 
-type State = {
-  open?: boolean;
-};
-
-export default class Services extends Component<{}, State> {
-  constructor(props: any) {
-    super(props);
-
-    this.state = {
-      open: true
-    };
-  }
-
+export default class Services extends Component {
   render() {
     return (
       <div

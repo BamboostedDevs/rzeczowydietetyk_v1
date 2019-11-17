@@ -1,6 +1,6 @@
 function Large() {
   return (
-    <div>
+    <>
       <img className="fixed-img" src="/photos/office_mobile.jpg" />
       <div>
         <div style={{ height: "20vh" }} />
@@ -31,7 +31,7 @@ function Large() {
           height: 100%;
         }
       `}</style>
-    </div>
+    </>
   );
 }
 
