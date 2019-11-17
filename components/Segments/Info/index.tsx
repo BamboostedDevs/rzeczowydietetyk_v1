@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { Segment } from ".";
+import { Segment } from "..";
 import { Image } from "react-bootstrap";
 //@ts-ignore
 import Bounce from "react-reveal/Bounce";
-import navbarContainer from "../../containers/navbar";
+import navbarContainer from "../../../containers/navbar";
 import { Subscribe } from "unstated";
 
 export default class Info extends Component {
