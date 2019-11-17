@@ -57,21 +57,6 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Abel&display=swap"
             rel="stylesheet"
           ></link>
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-78FPGP5HGS"
-          ></script>
-          <script>
-            {() => {
-              window.dataLayer = window.dataLayer || [];
-              function gtag() {
-                dataLayer.push(arguments);
-              }
-              gtag("js", new Date());
-
-              gtag("config", "G-78FPGP5HGS");
-            }}
-          </script>
         </Head>
         <body>
           <Main />
