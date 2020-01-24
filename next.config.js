@@ -13,7 +13,6 @@ module.exports = withPlugins([
         swDest: "static/service-worker.js",
         cacheId: "rzeczowydietetyk",
         cleanupOutdatedCaches: true,
-        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
         runtimeCaching: [
           {
             urlPattern: /^https?.*/,
