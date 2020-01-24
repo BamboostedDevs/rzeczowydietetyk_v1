@@ -8,18 +8,23 @@ import Zoom from "react-reveal/Zoom";
 function Large() {
   return (
     <div id="contact">
-      <Row style={{ maxWidth: "99vw" }}>
+      <Row
+        style={{
+          maxWidth: "99vw",
+          fontFamily: "Anaheim"
+        }}
+      >
         <Col
           style={{
             textAlign: "left",
-            marginTop: "15vh",
+            marginTop: "20vh",
             minWidth: "5vw",
             marginLeft: "2.5vw"
           }}
         >
           <Zoom bottom>Lokalizacja</Zoom>
           <Zoom right cascade duration={1500}>
-            <div style={{ fontFamily: "Lato" }}>
+            <div>
               <Row style={{ fontSize: "2.5vh", marginTop: "5vh" }}>
                 ul. Generała Leopolda Okulickiego 76
               </Row>
@@ -31,11 +36,11 @@ function Large() {
           </Zoom>
           <Zoom bottom>
             <Row style={{ fontSize: "4.25vh", marginTop: "2.5vh" }}>
-              Godziny Otwarcia:
+              Godziny przyjęć:
             </Row>
           </Zoom>
           <Zoom right cascade duration={1500}>
-            <div style={{ fontFamily: "Lato" }}>
+            <div>
               <Row style={{ fontSize: "2.75vh", marginTop: "2.5vh" }}>
                 Poniedziałek: godz. 14-20
               </Row>
@@ -50,7 +55,7 @@ function Large() {
             frameBorder={0}
             style={{
               border: 0,
-              marginTop: "12.5vh",
+              marginTop: "18.5vh",
               width: "50vw",
               height: "50vh",
               zIndex: 1
@@ -60,7 +65,7 @@ function Large() {
         </Col>
         <Col
           style={{
-            marginTop: "15vh",
+            marginTop: "20vh",
             minWidth: "5vw",
             marginLeft: "0.5vw",
             textAlign: "center"
@@ -74,8 +79,7 @@ function Large() {
                 style={{
                   fontSize: "2.25vh",
                   minWidth: "5vw",
-                  width: "100%",
-                  fontFamily: "Lato"
+                  width: "100%"
                 }}
               >
                 <Link

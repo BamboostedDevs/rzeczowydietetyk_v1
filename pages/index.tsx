@@ -1,12 +1,13 @@
 import dynamic from "next/dynamic";
 
 import { StickyContainer } from "react-sticky";
-import TrackVisibility from "react-on-screen";
+//@ts-ignore
+import IsVisible from "react-is-visible";
 
 import Layout from "../components/Layout";
 import navbarContainer from "../containers/navbar";
 import { Component } from "react";
-import { Home, Info, Services, Contact, Loading } from "../components/Segments";
+import { Home, Welcome, Info, Contact, Loading } from "../components/Segments";
 import { Subscribe } from "unstated";
 
 const Header = dynamic(() => import("../components/Header"), {
@@ -46,7 +47,7 @@ export default class Main extends Component<{}, State> {
   }
   render() {
     return (
-      <Layout>
+      <>
         {!this.state.done && (
           <div
             style={{
@@ -65,13 +66,15 @@ export default class Main extends Component<{}, State> {
         )}
         <div>
           <div style={{ backgroundColor: "rgb(112, 182, 241)" }}>
-            <TrackVisibility partialVisibility>
-              <Home size={this.state.size} />
-            </TrackVisibility>
+            <IsVisible partialVisibility>
+              {(IsVisible: boolean) => (
+                <Home size={this.state.size} isVisible={IsVisible} />
+              )}
+            </IsVisible>
           </div>
           <StickyContainer>
-            {this.state.size && this.state.size != "large" && <Info />}
-            <Services />
+            {this.state.size && this.state.size != "large" && <Welcome />}
+            <Info />
             <Contact />
             <Subscribe to={[navbarContainer]}>
               {container => (
@@ -82,7 +85,7 @@ export default class Main extends Component<{}, State> {
             </Subscribe>
           </StickyContainer>
         </div>
-      </Layout>
+      </>
     );
   }
 }

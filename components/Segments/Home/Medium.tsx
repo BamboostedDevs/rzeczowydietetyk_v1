@@ -21,7 +21,7 @@ function Medium() {
             <Row>
               <img
                 alt=""
-                src="/avocadoT.svg"
+                src="/icons/avocadoT.svg"
                 className="d-inline-block align-center"
                 style={{
                   height: "11.5rem",

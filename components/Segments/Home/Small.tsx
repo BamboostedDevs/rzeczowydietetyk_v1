@@ -28,7 +28,7 @@ function Small() {
             <Row>
               <img
                 alt=""
-                src="/avocadoT.svg"
+                src="/icons/avocadoT.svg"
                 className="d-inline-block align-center"
                 style={{
                   height: "8rem",

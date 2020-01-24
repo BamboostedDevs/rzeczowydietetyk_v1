@@ -13,7 +13,7 @@ export default class Contact extends Component {
         <div className="contact">
           {navbarContainer.state.size == "large" ? <Large /> : <Small />}
           <Slide bottom>
-            <img src="/mountains.svg" style={{ left: 0 }} />
+            <img src="/icons/mountains.svg" style={{ left: 0 }} />
           </Slide>
           {navbarContainer.state.size &&
             navbarContainer.state.size != "large" && (

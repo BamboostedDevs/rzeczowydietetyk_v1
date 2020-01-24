@@ -57,7 +57,7 @@ function Small() {
               marginLeft: "2.5vw"
             }}
           >
-            Godziny Otwarcia:
+            Godziny przyjęć:
           </Row>
         </Zoom>
         <Zoom left cascade duration={1500}>

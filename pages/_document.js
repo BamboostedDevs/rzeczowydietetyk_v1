@@ -1,12 +1,16 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+import { Grommet } from "grommet";
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="pl">
         <Head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            charSet="UTF-8"
+            name="viewport"
+            content="width=device-width, initial-scale=1 user-scalable=no"
+          />
           <meta
             name="description"
             content="Oficjalna strona internetowa RzeczowyDietetyk.com - kontakt, blog, profesjonalne rady, informacje, umawianie wizyt. (Poradnia Dietetyczna, Radom)"
@@ -27,7 +31,7 @@ class MyDocument extends Document {
             property="og:url"
             content="https://rzeczowydietetyk.beeinger.now.sh/"
           />
-          <meta property="og:image" content="/vegetables.jpg"></meta>
+          <meta property="og:image" content="/icons/owocnewarzywa.svg"></meta>
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="manifest" href="/manifest.json" />
@@ -39,25 +43,15 @@ class MyDocument extends Document {
           <meta name="msapplication-TileImage" content="/favicon-144.png" />
           <meta name="msapplication-config" content="/browserconfig.xml" />
           <link
-            href="https://fonts.googleapis.com/css?family=Allerta Stencil"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Lato&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Abel&display=swap"
+            href="https://fonts.googleapis.com/css?family=Roboto|Lato|Poppins:700|Anaheim|Abel&display=swap"
             rel="stylesheet"
           ></link>
         </Head>
         <body>
-          <Main />
-          <NextScript />
+          <Grommet plain>
+            <Main />
+            <NextScript />
+          </Grommet>
         </body>
       </Html>
     );

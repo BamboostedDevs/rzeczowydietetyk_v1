@@ -19,13 +19,8 @@ import {
   PongSpinner
 } from "react-spinners-kit";
 
-type State = {
-  spinners: object[];
-  interval: any;
-  now: number;
-};
-export default class PageIsBeingCreated extends Component<{}, State> {
-  constructor(props: any) {
+export default class PageIsBeingCreated extends Component {
+  constructor(props) {
     super(props);
     this.state = {
       spinners: [

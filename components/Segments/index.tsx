@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Home from "./Home";
-import Info from "./Info";
+import Welcome from "./Welcome";
 import Loading from "../Utils/Loading";
-import Services from "./Services";
+import Info from "./Info";
 import Contact from "./Contact";
 
 type Props = {
@@ -28,4 +28,4 @@ class Segment extends Component<Props> {
   }
 }
 
-export { Home, Info, Loading, Services, Contact, Segment };
+export { Home, Welcome, Loading, Info, Contact, Segment };

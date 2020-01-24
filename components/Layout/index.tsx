@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react";
 import { Provider, Subscribe } from "unstated";
-import "bootstrap-css-only/css/bootstrap.min.css";
 import navbarContainer from "../../containers/navbar";
 import Head from "next/head";
 

@@ -1,11 +1,11 @@
 import { Col, Row, Container } from "react-bootstrap";
 import BgAnimation from "../../Utils/BgAnimation";
-import { Info } from "..";
+import { Welcome } from "..";
 
 function Large() {
   return (
-    <div className="row" id="home">
-      <div className="left header">
+    <div style={{ display: "flex", width: "100%" }} id="home">
+      <div style={{ flex: "70%", fontSize: "10vh" }}>
         <BgAnimation />
         <Container style={{ marginTop: "20vh", marginLeft: "5vw" }}>
           <Row>
@@ -14,7 +14,7 @@ function Large() {
               <Row>
                 <img
                   alt="logo"
-                  src="/avocadoT.svg"
+                  src="/icons/avocadoT.svg"
                   className="d-inline-block align-center"
                   style={{
                     height: "17rem",
@@ -31,27 +31,9 @@ function Large() {
           </Row>
         </Container>
       </div>
-      <div className="right">
-        <Info />
+      <div style={{ flex: "30%" }}>
+        <Welcome />
       </div>
-      <style jsx>{`
-        .row {
-          display: flex;
-          width: 100%;
-        }
-
-        .left {
-          flex: 70%;
-        }
-
-        .header {
-          font-size: 10vh;
-        }
-
-        .right {
-          flex: 30%;
-        }
-      `}</style>
     </div>
   );
 }

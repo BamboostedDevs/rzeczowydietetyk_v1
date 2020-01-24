@@ -17,8 +17,8 @@ const Navigation: FunctionComponent = () => {
         <Link color="textPrimary" href="#home" underline="none">
           Home
         </Link>
-        <Link color="textPrimary" href="#services" underline="none">
-          Usługi
+        <Link color="textPrimary" href="#info" underline="none">
+          Info
         </Link>
         <Link color="textPrimary" href="#contact" underline="none">
           Kontakt
