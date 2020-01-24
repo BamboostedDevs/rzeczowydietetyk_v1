@@ -5,6 +5,7 @@ import { Image } from "react-bootstrap";
 import Bounce from "react-reveal/Bounce";
 import navbarContainer from "../../../containers/navbar";
 import { Subscribe } from "unstated";
+import "./welcome.module.css";
 
 export default class Welcome extends Component {
   render() {
@@ -45,24 +46,6 @@ export default class Welcome extends Component {
             </div>
           )}
         </Subscribe>
-
-        <style jsx>
-          {`
-            #info {
-              font-size: 5vh;
-              text-align: center;
-              background-color: rgb(112, 182, 241);
-            }
-            .description {
-              font-size: 2.75vh;
-              margin-top: 7.5vh;
-              margin-left: 2vw;
-              margin-right: 2vw;
-              font-family: Lato;
-              padding-bottom: 5vh;
-            }
-          `}
-        </style>
       </Segment>
     );
   }
