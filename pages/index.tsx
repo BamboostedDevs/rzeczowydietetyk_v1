@@ -39,7 +39,6 @@ export default class Main extends Component<{}, State> {
     }
     navbarContainer.changeSize(size) && navbarContainer.allow();
     this.setState({ size: size });
-    console.log(size);
     setTimeout(() => {
       this.setState({ done: true });
       navbarContainer.setState({ done: true });
