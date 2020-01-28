@@ -138,17 +138,11 @@ function Large() {
           </div>
         </div>
       </div>
-      <div style={{ width: "100vw" }}>
-        {/* <AliceCarousel mouseTrackingEnabled>
-          <img src="/images/1.jpeg" />
-          <img src="/images/2.jpeg" />
-          <img src="/images/3.jpeg" />
-          <img src="/images/4.jpg" />
-          <img src="/images/5.jpg" />
-        </AliceCarousel> */}
-      </div>
       <style jsx>
         {`
+          .react-multiple-carousel__arrow {
+            z-index: 900;
+          }
           .bringwithu {
             margin: 5px 5px 5px 5px;
             border-radius: 5px;
@@ -161,6 +155,14 @@ function Large() {
           .bringwithu:hover {
             margin: 0 0 0 0;
             border-radius: 30px;
+            background-color: rgba(0, 176, 255, 0.1);
+            transition: background-color 1s, margin 1s, border-radius 1.5s;
+          }
+          .bringwithufocus {
+            margin: 0 0 0 0;
+            border-radius: 30px;
+            width: 100%;
+            height: 100%;
             background-color: rgba(0, 176, 255, 0.1);
             transition: background-color 1s, margin 1s, border-radius 1.5s;
           }

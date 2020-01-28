@@ -5,7 +5,6 @@ import Large from "./Large";
 import Small from "./Small";
 
 type Props = {
-  isVisible?: boolean;
   size: "large" | "medium" | "small" | boolean;
 };
 type State = {
@@ -20,8 +19,7 @@ export default class Home extends Component<Props, State> {
   }
 
   render() {
-    const { isVisible, size } = this.props;
-    isVisible ? navbarContainer.show() : navbarContainer.hide();
+    const { size } = this.props;
     return (
       <Segment>
         <div style={{ backgroundColor: "rgb(112,182,241)" }}>

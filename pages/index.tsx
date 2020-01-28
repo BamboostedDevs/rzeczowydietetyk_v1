@@ -4,11 +4,9 @@ import { StickyContainer } from "react-sticky";
 //@ts-ignore
 import IsVisible from "react-is-visible";
 
-import Layout from "../components/Layout";
 import navbarContainer from "../containers/navbar";
 import { Component } from "react";
 import { Home, Welcome, Info, Contact, Loading } from "../components/Segments";
-import { Subscribe } from "unstated";
 
 const Header = dynamic(() => import("../components/Header"), {
   ssr: false
@@ -17,13 +15,14 @@ const Header = dynamic(() => import("../components/Header"), {
 type State = {
   size: boolean | "large" | "medium" | "small";
   done: boolean;
+  visible: boolean;
 };
 
 export default class Main extends Component<{}, State> {
   constructor(props: any) {
     super(props);
 
-    this.state = { size: false, done: false };
+    this.state = { size: false, done: false, visible: false };
   }
 
   componentDidMount() {
@@ -47,7 +46,7 @@ export default class Main extends Component<{}, State> {
   render() {
     return (
       <>
-        {!this.state.done && (
+        {!this.state.done ? (
           <div
             style={{
               left: 0,
@@ -62,28 +61,25 @@ export default class Main extends Component<{}, State> {
           >
             <Loading />
           </div>
-        )}
-        <div>
-          <div style={{ backgroundColor: "rgb(112, 182, 241)" }}>
-            <IsVisible partialVisibility>
-              {(IsVisible: boolean) => (
-                <Home size={this.state.size} isVisible={IsVisible} />
-              )}
-            </IsVisible>
+        ) : (
+          <div>
+            <div style={{ backgroundColor: "rgb(112, 182, 241)" }}>
+              <IsVisible partialVisibility>
+                {(IsVisible: boolean) => {
+                  IsVisible === this.state.visible &&
+                    this.setState({ visible: !IsVisible });
+                  return <Home size={this.state.size} />;
+                }}
+              </IsVisible>
+            </div>
+            <StickyContainer>
+              {this.state.size && this.state.size != "large" && <Welcome />}
+              <Info />
+              <Contact />
+              {this.state.visible && <Header render={this.state.visible} />}
+            </StickyContainer>
           </div>
-          <StickyContainer>
-            {this.state.size && this.state.size != "large" && <Welcome />}
-            <Info />
-            <Contact />
-            <Subscribe to={[navbarContainer]}>
-              {container => (
-                <Header
-                  render={!container.state.visible && container.state.allow}
-                />
-              )}
-            </Subscribe>
-          </StickyContainer>
-        </div>
+        )}
       </>
     );
   }
