@@ -14,12 +14,12 @@ function Large() {
               <Row>
                 <img
                   alt="logo"
-                  src="/icons/avocadoT.svg"
                   className="d-inline-block align-center"
                   style={{
                     height: "17rem",
                     width: "auto"
                   }}
+                  src={require("../../../public/images/avocadoT.svg")}
                 />
               </Row>
               <Row />

@@ -31,7 +31,10 @@ class MyDocument extends Document {
             property="og:url"
             content="https://rzeczowydietetyk.beeinger.now.sh/"
           />
-          <meta property="og:image" content="/icons/owocnewarzywa.svg"></meta>
+          <meta
+            property="og:image"
+            content={require("../public/images/owocnewarzywa.svg")}
+          ></meta>
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="manifest" href="/manifest.json" />

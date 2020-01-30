@@ -20,13 +20,13 @@ function Medium() {
             <Row />
             <Row>
               <img
-                alt=""
-                src="/icons/avocadoT.svg"
+                alt="logo"
                 className="d-inline-block align-center"
                 style={{
                   height: "11.5rem",
                   width: "auto"
                 }}
+                src={require("../../../public/images/avocadoT.svg")}
               />
             </Row>
             <Row />

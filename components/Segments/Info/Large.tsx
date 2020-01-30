@@ -16,7 +16,7 @@ function Large() {
           style={{
             width: "100%",
             height: "120vh",
-            backgroundImage: "url(/icons/owocnewarzywa.svg)",
+            backgroundImage: require("../../../public/images/owocnewarzywa.svg"),
             backgroundColor: "rgba(220,250,221,1)",
             backgroundBlendMode: "difference",
             fontSize: "10vh",
@@ -87,7 +87,7 @@ function Large() {
                     </div>
                     <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
                       <Flip top when={reveal.includes(value.value)}>
-                        <a href="/photos/dzienniczek.pdf" download>
+                        <a href="/images/dzienniczek.pdf" download>
                           Wydrkuj i przynieś na wiyztę
                         </a>
                       </Flip>
@@ -125,7 +125,7 @@ function Large() {
           style={{
             width: "100%",
             height: "120vh",
-            backgroundImage: "url(/icons/owocnewarzywa.svg)",
+            backgroundImage: require("../../../public/images/owocnewarzywa.svg"),
             backgroundColor: "rgba(220,250,221,1)",
             backgroundBlendMode: "difference",
             fontSize: "10vh",
@@ -167,7 +167,7 @@ function Large() {
             transition: background-color 1s, margin 1s, border-radius 1.5s;
           }
           .officeWeb {
-            background: url(/photos/office_web.jpg);
+            background: url(/images/office_web.jpg);
             background-size: cover;
             background-attachment: fixed;
             width: 100%;
@@ -175,7 +175,7 @@ function Large() {
             font-family: Anaheim;
           }
           .machineWeb {
-            background: url(/photos/tanita.jpg);
+            background: url(/images/tanita_web.jpg);
             background-size: cover;
             background-attachment: fixed;
             width: 100%;

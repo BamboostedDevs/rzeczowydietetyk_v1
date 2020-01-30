@@ -27,14 +27,14 @@ function Small() {
             <Row />
             <Row>
               <img
-                alt=""
-                src="/icons/avocadoT.svg"
+                alt="logo"
                 className="d-inline-block align-center"
                 style={{
                   height: "8rem",
                   width: "auto",
                   marginRight: "3vw"
                 }}
+                src={require("../../../public/images/avocadoT.svg")}
               />
             </Row>
             <Row />

@@ -29,13 +29,13 @@ function Header(render: any) {
                     <Row />
                     <Row>
                       <img
-                        alt=""
-                        src="/icons/avocadoT.svg"
                         className="d-inline-block align-center"
                         style={{
                           height: "4rem",
                           width: "auto"
                         }}
+                        alt="logo"
+                        src={require("../../public/images/avocadoT.svg")}
                       />
                     </Row>
                     <Row />

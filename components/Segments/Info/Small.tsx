@@ -10,12 +10,21 @@ import Simple from "../../Utils/Carousel";
 function Large() {
   const [amplified, amplify] = useState();
   const [isInvisible, markInvisible] = useState(false);
+
   return (
     <>
       {isInvisible ? (
-        <img className="fixed-img" src="/photos/tanita.jpg" />
+        <img
+          className="fixed-img"
+          alt="tanita"
+          src={require("../../../public/images/tanita_mobile.jpg")}
+        />
       ) : (
-        <img className="fixed-img" src="/photos/office_mobile.jpg" />
+        <img
+          className="fixed-img"
+          alt="office"
+          src={require("../../../public/images/office_mobile.jpg")}
+        />
       )}
       <div>
         <div style={{ height: "20vh" }} />
@@ -23,7 +32,7 @@ function Large() {
           id="info"
           style={{
             width: "100%",
-            backgroundImage: "url(/icons/owocnewarzywa.svg)",
+            backgroundImage: require("../../../public/images/owocnewarzywa.svg"),
             backgroundColor: "rgba(220,250,221,1)",
             backgroundBlendMode: "difference",
             fontSize: "10vw",
@@ -98,7 +107,7 @@ function Large() {
                     </div>
                     <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
                       <Flip top>
-                        <a href="/photos/dzienniczek.pdf" download>
+                        <a href="/images/dzienniczek.pdf" download>
                           Wydrkuj i przynieś na wiyztę
                         </a>
                       </Flip>
@@ -139,7 +148,7 @@ function Large() {
             style={{
               width: "100%",
               height: "95vh",
-              backgroundImage: "url(/icons/owocnewarzywa.svg)",
+              backgroundImage: require("../../../public/images/owocnewarzywa.svg"),
               backgroundColor: "rgba(220,250,221,1)",
               backgroundBlendMode: "difference",
               fontSize: "10vw",
