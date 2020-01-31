@@ -26,7 +26,7 @@ function Medium() {
                   height: "11.5rem",
                   width: "auto"
                 }}
-                src={require("../../../public/images/avocadoT.svg")}
+                src="/images/avocadoT.svg"
               />
             </Row>
             <Row />

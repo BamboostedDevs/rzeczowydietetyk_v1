@@ -14,7 +14,7 @@ export default class Welcome extends Component {
           {container => (
             <div id="welcome">
               <Image
-                src={require("../../../public/images/cover.jpg")}
+                src="/images/cover.jpg"
                 style={{
                   width: "20vh",
                   height: "20vh",

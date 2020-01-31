@@ -17,13 +17,13 @@ function Large() {
         <img
           className="fixed-img"
           alt="tanita"
-          src={require("../../../public/images/tanita_mobile.jpg")}
+          src="/images/tanita_mobile.jpg"
         />
       ) : (
         <img
           className="fixed-img"
           alt="office"
-          src={require("../../../public/images/office_mobile.jpg")}
+          src="images/office_mobile.jpg"
         />
       )}
       <div>

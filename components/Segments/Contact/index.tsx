@@ -16,7 +16,7 @@ export default class Contact extends Component {
             <img
               alt="mountains"
               style={{ left: 0 }}
-              src={require("../../../public/images/mountains.svg")}
+              src="/images/mountains.svg"
             />
           </Slide>
           {navbarContainer.state.size &&

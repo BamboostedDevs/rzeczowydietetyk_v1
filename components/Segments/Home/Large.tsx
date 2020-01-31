@@ -19,7 +19,7 @@ function Large() {
                     height: "17rem",
                     width: "auto"
                   }}
-                  src={require("../../../public/images/avocadoT.svg")}
+                  src="/images/avocadoT.svg"
                 />
               </Row>
               <Row />

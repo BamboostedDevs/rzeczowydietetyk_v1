@@ -19,11 +19,11 @@ const responsive = {
   }
 };
 const images = [
-  require("../../public/images/1.jpg"),
-  require("../../public/images/2.jpg"),
-  require("../../public/images/3.jpg"),
-  require("../../public/images/4.jpg"),
-  require("../../public/images/5.jpg")
+  "/images/1.jpg",
+  "/images/2.jpg",
+  "/images/3.jpg",
+  "/images/4.jpg",
+  "/images/5.jpg"
 ];
 
 // Because this is an inframe, so the SSR mode doesn't not do well here.

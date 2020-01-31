@@ -34,7 +34,7 @@ function Small() {
                   width: "auto",
                   marginRight: "3vw"
                 }}
-                src={require("../../../public/images/avocadoT.svg")}
+                src="/images/avocadoT.svg"
               />
             </Row>
             <Row />

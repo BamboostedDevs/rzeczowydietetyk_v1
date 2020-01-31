@@ -35,7 +35,7 @@ function Header(render: any) {
                           width: "auto"
                         }}
                         alt="logo"
-                        src={require("../../public/images/avocadoT.svg")}
+                        src="/images/avocadoT.svg"
                       />
                     </Row>
                     <Row />
