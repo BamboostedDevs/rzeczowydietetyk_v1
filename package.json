@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next build && next start",
+    "start": "next start",
     "export": "next build && next export"
   },
   "keywords": [
@@ -22,7 +22,6 @@
   "license": "© All rights reserved.",
   "description": "Oryginalna strona główna Rzeczowego Dietetyka (Radom, Mazowieckie). Blog, profesjonalne rady, informacje oraz umawianie wizyt.",
   "dependencies": {
-    "@bit/formidablelabs.react-animations.fade-in-down": "^1.0.0",
     "@material-ui/core": "^4.9.0",
     "@material-ui/icons": "^4.5.1",
     "@types/node": "^13.5.2",

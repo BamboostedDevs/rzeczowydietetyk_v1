@@ -32,7 +32,7 @@ function Large() {
           id="info"
           style={{
             width: "100%",
-            backgroundImage: require("../../../public/images/owocnewarzywa.svg"),
+            backgroundImage: "url(/images/owocnewarzywa.svg)",
             backgroundColor: "rgba(220,250,221,1)",
             backgroundBlendMode: "difference",
             fontSize: "10vw",
@@ -148,7 +148,7 @@ function Large() {
             style={{
               width: "100%",
               height: "95vh",
-              backgroundImage: require("../../../public/images/owocnewarzywa.svg"),
+              backgroundImage: "url(/images/owocnewarzywa.svg)",
               backgroundColor: "rgba(220,250,221,1)",
               backgroundBlendMode: "difference",
               fontSize: "10vw",
