@@ -6,7 +6,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
-      <div className="preload">
+      <div style={{ display: "none" }}>
         <img src="/images/owocnewarzywa.svg" />
         <img src="/images/office_web.jpg" />
         <img src="/images/tanita_web.jpg" />
