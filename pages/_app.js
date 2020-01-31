@@ -6,6 +6,14 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Component {...pageProps} />
+      <div className="preload">
+        <img src="/images/owocnewarzywa.svg" />
+        <img src="/images/office_web.jpg" />
+        <img src="/images/tanita_web.jpg" />
+        <img src="/images/owocnewarzywa_mobile.svg" />
+        <img src="/images/tanita_mobile.jpg" />
+        <img src="/images/office_mobile.jpg" />
+      </div>
     </Layout>
   );
 }
