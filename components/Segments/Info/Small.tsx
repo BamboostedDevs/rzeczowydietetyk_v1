@@ -72,7 +72,9 @@ function Large() {
               >
                 {value.value === 27 ? (
                   <div style={{ verticalAlign: "middle" }}>
-                    <div style={{ marginTop: "3vh" }}>Wyniki badań</div>
+                    <div style={{ marginTop: "5vh", fontSize: "3vh" }}>
+                      Wyniki badań
+                    </div>
                     <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
                       <Flip top cascade>
                         <div>
