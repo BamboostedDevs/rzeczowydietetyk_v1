@@ -72,8 +72,8 @@ function Large() {
               >
                 {value.value === 27 ? (
                   <div style={{ verticalAlign: "middle" }}>
-                    <div style={{ marginTop: "5vh" }}>Wyniki badań</div>
-                    <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
+                    <div style={{ marginTop: "3vh" }}>Wyniki badań</div>
+                    <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
                       <Flip top cascade>
                         <div>
                           <Row
@@ -101,11 +101,11 @@ function Large() {
                     </div>
                   </div>
                 ) : value.value === 26 ? (
-                  <div style={{ verticalAlign: "middle", fontSize: "4vh" }}>
+                  <div style={{ verticalAlign: "middle", fontSize: "3vh" }}>
                     <div style={{ marginTop: "5vh" }}>
                       Dzienniczek żywieniowy
                     </div>
-                    <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
+                    <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
                       <Flip top>
                         <a href="/images/dzienniczek.pdf" download>
                           Wydrkuj i przynieś na wiyztę
@@ -118,12 +118,12 @@ function Large() {
                     <div
                       style={{
                         marginTop: "5vh",
-                        fontSize: "4vh"
+                        fontSize: "3vh"
                       }}
                     >
                       Książeczka zdrowia dziecka
                     </div>
-                    <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
+                    <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
                       <Flip top>
                         <div>Dotyczy pacjentów poniżej 18. roku życia</div>
                       </Flip>
@@ -131,10 +131,10 @@ function Large() {
                   </div>
                 ) : (
                   <div style={{ verticalAlign: "middle" }}>
-                    <div style={{ marginTop: "5vh", fontSize: "4vh" }}>
+                    <div style={{ marginTop: "5vh", fontSize: "3vh" }}>
                       Wypis ze szpitala
                     </div>
-                    <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
+                    <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
                       <Flip top>
                         <div>Opcjonalne</div>
                       </Flip>
