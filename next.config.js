@@ -1,10 +1,8 @@
 const withPlugins = require("next-compose-plugins");
-const optimizedImages = require("next-optimized-images");
 const progressBar = require("next-progressbar");
 const offline = require("next-offline");
 
 module.exports = withPlugins([
-  [optimizedImages, {}],
   [progressBar, {}],
   [
     offline,
