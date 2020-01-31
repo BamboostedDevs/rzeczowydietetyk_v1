@@ -13,7 +13,7 @@ function Header(render: any) {
               variant="light"
               fixed="top"
               className="bg"
-              style={{ zIndex: 900 }}
+              style={{ zIndex: 900, fontFamily: "Anaheim" }}
             >
               <Navbar.Brand
                 href="/"

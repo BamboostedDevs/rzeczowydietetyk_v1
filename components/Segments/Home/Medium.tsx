@@ -3,7 +3,10 @@ import BgAnimation from "../../Utils/BgAnimation";
 
 function Medium() {
   return (
-    <div style={{ maxHeight: "100vh", width: "100vw" }} id="home">
+    <div
+      style={{ maxHeight: "100vh", width: "100vw", fontFamily: "Anaheim" }}
+      id="home"
+    >
       <BgAnimation />
       <Container
         style={{

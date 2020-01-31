@@ -7,7 +7,8 @@ function Small() {
       style={{
         maxHeight: "100vh",
         width: "100vw",
-        backgroundColor: "rgb(112,182,241)"
+        backgroundColor: "rgb(112,182,241)",
+        fontFamily: "Anaheim"
       }}
       id="home"
     >

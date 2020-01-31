@@ -11,7 +11,7 @@ function Large() {
       <Row
         style={{
           maxWidth: "99vw",
-          fontFamily: "Anaheim"
+          fontFamily: "Rajdhani"
         }}
       >
         <Col

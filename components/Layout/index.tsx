@@ -25,7 +25,7 @@ export default class Layout extends PureComponent<Props> {
         <style jsx global>{`
           body {
             background-color: rgba(187, 246, 189, 0.5);
-            font-family: Abel;
+            font-family: Rajdhani;
           }
           img {
             pointer-events: none;

@@ -27,10 +27,7 @@ class MyDocument extends Document {
             property="og:description"
             content="Dietetyk kliniczny - Kontakt, blog, informacje i umawianie wizyt"
           ></meta>
-          <meta
-            property="og:url"
-            content="https://rzeczowydietetyk.beeinger.now.sh/"
-          />
+          <meta property="og:url" content="https://rzeczowydietetyk.now.sh/" />
           <meta property="og:image" content="/images/owocnewarzywa.svg"></meta>
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />

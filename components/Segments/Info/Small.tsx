@@ -26,7 +26,7 @@ function Large() {
           src="images/office_mobile.jpg"
         />
       )}
-      <div>
+      <div style={{ fontFamily: "Rajdhani" }}>
         <div style={{ height: "20vh" }} />
         <div
           id="info"

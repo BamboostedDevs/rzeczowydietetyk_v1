@@ -4,7 +4,10 @@ import { Welcome } from "..";
 
 function Large() {
   return (
-    <div style={{ display: "flex", width: "100%" }} id="home">
+    <div
+      style={{ display: "flex", width: "100%", fontFamily: "Anaheim" }}
+      id="home"
+    >
       <div style={{ flex: "70%", fontSize: "10vh" }}>
         <BgAnimation />
         <Container style={{ marginTop: "20vh", marginLeft: "5vw" }}>

@@ -9,7 +9,12 @@ import PhoneIcon from "@material-ui/icons/Phone";
 
 function Small() {
   return (
-    <div id="contact">
+    <div
+      id="contact"
+      style={{
+        fontFamily: "Rajdhani"
+      }}
+    >
       <Container>
         <Zoom bottom>
           <Row

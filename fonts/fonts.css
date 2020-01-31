@@ -11,10 +11,14 @@
   src: local("Lato"), url(./Anaheim.ttf) format("truetype");
 }
 @font-face {
-  font-family: "Abel";
-  src: local("Abel"), url(./Abel.ttf) format("truetype");
+  font-family: "Rajdhani";
+  src: local("Rajdhani"), url(./Rajdhani.ttf) format("truetype");
 }
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"), url(./Roboto.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Rajdhani";
+  src: local("Rajdhani"), url(./Anaheim.ttf) format("truetype");
 }

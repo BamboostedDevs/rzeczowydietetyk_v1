@@ -172,7 +172,7 @@ function Large() {
             background-attachment: fixed;
             width: 100%;
             text-align: center;
-            font-family: Anaheim;
+            font-family: Rajdhani;
           }
           .machineWeb {
             background: url(/images/tanita_web.jpg);
@@ -180,7 +180,7 @@ function Large() {
             background-attachment: fixed;
             width: 100%;
             text-align: center;
-            font-family: Anaheim;
+            font-family: Rajdhani;
           }
         `}
       </style>
