@@ -42,10 +42,6 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#70b6f1" />
           <meta name="msapplication-TileImage" content="/favicon-144.png" />
           <meta name="msapplication-config" content="/browserconfig.xml" />
-          <link
-            href="https://fonts.googleapis.com/css?family=Roboto|Lato|Poppins:700|Anaheim|Abel&display=swap"
-            rel="stylesheet"
-          ></link>
         </Head>
         <body>
           <Grommet plain>

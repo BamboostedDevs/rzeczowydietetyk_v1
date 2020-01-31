@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "AllertaStencil";
+  src: local("AllertaStencil"), url(./AllertaStencil.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Anaheim";
+  src: local("Anaheim"), url(./Anaheim.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url(./Anaheim.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Abel";
+  src: local("Abel"), url(./Abel.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url(./Roboto.ttf) format("truetype");
+}
