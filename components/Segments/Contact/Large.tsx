@@ -28,6 +28,7 @@ function Large() {
               <Row style={{ fontSize: "2.5vh", marginTop: "5vh" }}>
                 ul. Generała Leopolda Okulickiego 76
               </Row>
+              <Row style={{ fontSize: "2.5vh" }}>ul. Graniczna 24</Row>
               <Row style={{ fontSize: "2.25vh" }}>
                 (wewnątrz przychodni Polmedic)
               </Row>
@@ -35,9 +36,9 @@ function Large() {
             </div>
           </Zoom>
           <Zoom bottom>
-            <Row style={{ fontSize: "4.25vh", marginTop: "2.5vh" }}>
+            <div style={{ fontSize: "4.25vh", marginTop: "2.5vh" }}>
               Godziny przyjęć:
-            </Row>
+            </div>
           </Zoom>
           <Zoom right cascade duration={1500}>
             <div>
@@ -61,7 +62,7 @@ function Large() {
               zIndex: 1
             }}
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9955.185948724045!2d21.127623!3d51.406794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdc2a9be22232247d!2sRzeczowy%20Dietetyk!5e0!3m2!1sen!2spl!4v1573308250850!5m2!1sen!2spl"
-          ></iframe>
+          />
         </Col>
         <Col
           style={{

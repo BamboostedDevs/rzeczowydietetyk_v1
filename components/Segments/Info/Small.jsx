@@ -1,31 +1,15 @@
 import React, { useState } from "react";
 import { Distribution } from "grommet";
-//@ts-ignore
 import Flip from "react-reveal/Flip";
 import { Row } from "react-bootstrap";
-//@ts-ignore
-import IsVisible from "react-is-visible";
 import Simple from "../../Utils/Carousel";
 
 function Large() {
-  const [amplified, amplify] = useState();
-  const [isInvisible, markInvisible] = useState(false);
+  const [amplified, amplify] = useState(null);
 
   return (
     <>
-      {isInvisible ? (
-        <img
-          className="fixed-img"
-          alt="tanita"
-          src="/images/tanita_mobile.jpg"
-        />
-      ) : (
-        <img
-          className="fixed-img"
-          alt="office"
-          src="images/office_mobile.jpg"
-        />
-      )}
+      <img className="fixed-img" alt="office" src="images/office_mobile.jpg" />
       <div style={{ fontFamily: "Rajdhani" }}>
         <div style={{ height: "20vh" }} />
         <div
@@ -41,36 +25,34 @@ function Large() {
           }}
         >
           <div>Co zabrać na wizytę?</div>
-          <IsVisible>
-            {(IsVisible: boolean) => {
-              IsVisible === true && markInvisible(false);
-              return <div />;
-            }}
-          </IsVisible>
           <Distribution
             style={{
               fontSize: "5vh",
-              height: "85vh",
+              height: "70vh",
               marginTop: "2vh",
               marginLeft: "1vw",
               marginRight: "1vw"
             }}
             values={[
-              { value: 27 },
-              { value: 26 },
-              { value: 25 },
-              { value: 24 }
+              { value: 10, element: "checks" },
+              { value: 10, element: "diary" },
+              { value: 20, element: "info" },
+              { value: 10, element: "hospital" },
+              { value: 10, element: "child" },
+              { value: 20, element: "dress" }
             ]}
           >
             {value => (
               <div
                 className={
-                  amplified == value.value ? "bringwithufocus" : "bringitwithu"
+                  amplified === value.element
+                    ? "bringwithufocus"
+                    : "bringitwithu"
                 }
-                onTouchStart={() => amplify(value.value)}
+                onTouchStart={() => amplify(value.element)}
                 onTouchEnd={() => amplify(null)}
               >
-                {value.value === 27 ? (
+                {value.element === "checks" ? (
                   <div style={{ verticalAlign: "middle" }}>
                     <div style={{ marginTop: "5vh", fontSize: "3vh" }}>
                       Wyniki badań
@@ -98,13 +80,18 @@ function Large() {
                           >
                             Glukoza
                           </Row>
+                          <Row
+                            style={{ textAlign: "center", display: "inherit" }}
+                          >
+                            TSH
+                          </Row>
                         </div>
                       </Flip>
                     </div>
                   </div>
-                ) : value.value === 26 ? (
-                  <div style={{ verticalAlign: "middle", fontSize: "3vh" }}>
-                    <div style={{ marginTop: "5vh" }}>
+                ) : value.element === "diary" ? (
+                  <div style={{ verticalAlign: "middle" }}>
+                    <div style={{ marginTop: "5vh", fontSize: "3vh" }}>
                       Dzienniczek żywieniowy
                     </div>
                     <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
@@ -115,14 +102,9 @@ function Large() {
                       </Flip>
                     </div>
                   </div>
-                ) : value.value === 25 ? (
+                ) : value.element === "child" ? (
                   <div style={{ verticalAlign: "middle" }}>
-                    <div
-                      style={{
-                        marginTop: "5vh",
-                        fontSize: "3vh"
-                      }}
-                    >
+                    <div style={{ marginTop: "5vh", fontSize: "3vh" }}>
                       Książeczka zdrowia dziecka
                     </div>
                     <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
@@ -131,7 +113,7 @@ function Large() {
                       </Flip>
                     </div>
                   </div>
-                ) : (
+                ) : value.element === "hospital" ? (
                   <div style={{ verticalAlign: "middle" }}>
                     <div style={{ marginTop: "5vh", fontSize: "3vh" }}>
                       Wypis ze szpitala
@@ -142,6 +124,36 @@ function Large() {
                       </Flip>
                     </div>
                   </div>
+                ) : value.element === "dress" ? (
+                  <div style={{ verticalAlign: "middle" }}>
+                    <div style={{ marginTop: "5vh", fontSize: "3vh" }}>
+                      Przygotowanie na badania antropometryczne
+                    </div>
+                    <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
+                      <Flip top>
+                        <div>
+                          (analiza impedancji bioelektrycznej) wykonywane
+                          podczas wizyty, wymagają one swobodnego odkrycia dłoni
+                          i stóp.{" "}
+                        </div>
+                      </Flip>
+                    </div>
+                  </div>
+                ) : (
+                  value.element === "info" && (
+                    <div style={{ verticalAlign: "middle" }}>
+                      <div style={{ marginTop: "5vh", fontSize: "3vh" }}>
+                        Informacje o przyjmowanych lekach
+                      </div>
+                      <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
+                        <Flip top>
+                          <div>
+                            Dotyczy pacjentów przyjmujących leki regularnie
+                          </div>
+                        </Flip>
+                      </div>
+                    </div>
+                  )
                 )}
               </div>
             )}
@@ -158,12 +170,6 @@ function Large() {
             }}
           >
             O mnie
-            <IsVisible>
-              {(IsVisible: boolean) => {
-                IsVisible === true && markInvisible(IsVisible);
-                return <div />;
-              }}
-            </IsVisible>
             <div style={{ marginTop: "7.5vh" }}>
               <Simple deviceType="mobile" />
             </div>
@@ -200,6 +206,10 @@ function Large() {
           height: 100%;
           background-color: rgba(0, 176, 255, 0.1);
           transition: background-color 1s, margin 1s, border-radius 1.5s;
+        }
+        .takelist {
+          text-align: center;
+          display: inherit;
         }
       `}</style>
     </>

@@ -26,7 +26,7 @@ export default class Main extends Component<{}, State> {
   }
 
   componentDidMount() {
-    var size: "large" | "medium" | "small";
+    let size: "large" | "medium" | "small";
     const height = window.innerHeight;
     const width = window.innerWidth;
     if (height - width < 0) {

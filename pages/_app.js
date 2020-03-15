@@ -1,3 +1,4 @@
+import React from "react";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "react-multi-carousel/lib/styles.css";
 import "../fonts";

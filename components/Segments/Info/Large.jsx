@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Distribution } from "grommet";
-//@ts-ignore
 import Flip from "react-reveal/Flip";
 import Simple from "../../Utils/Carousel";
 
@@ -27,34 +26,36 @@ function Large() {
           <Distribution
             style={{
               fontSize: "5vh",
-              height: "70vh",
+              height: "75vh",
               marginTop: "2vh",
               marginLeft: "1vw",
               marginRight: "1vw"
             }}
             values={[
-              { value: 40 },
-              { value: 30 },
-              { value: 15 },
-              { value: 14 }
+              { value: 10, element: "checks" },
+              { value: 10, element: "diary" },
+              { value: 10, element: "info" },
+              { value: 10, element: "hospital" },
+              { value: 10, element: "child" },
+              { value: 10, element: "dress" }
             ]}
           >
             {value => (
               <div
                 className="bringwithu"
                 onMouseEnter={() => {
-                  if (!reveal.includes(value.value)) {
+                  if (!reveal.includes(value.element)) {
                     var list = reveal.slice(0);
-                    list.push(value.value);
+                    list.push(value.element);
                     revealNow(list);
                   }
                 }}
               >
-                {value.value === 40 ? (
+                {value.element === "checks" ? (
                   <div style={{ verticalAlign: "middle" }}>
                     <div style={{ marginTop: "5vh" }}>Wyniki badań</div>
                     <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
-                      <Flip top cascade when={reveal.includes(value.value)}>
+                      <Flip top cascade when={reveal.includes(value.element)}>
                         <div>
                           <Row
                             style={{ textAlign: "center", display: "inherit" }}
@@ -76,43 +77,78 @@ function Large() {
                           >
                             Glukoza
                           </Row>
+                          <Row
+                            style={{ textAlign: "center", display: "inherit" }}
+                          >
+                            TSH
+                          </Row>
                         </div>
                       </Flip>
                     </div>
                   </div>
-                ) : value.value === 30 ? (
+                ) : value.element === "diary" ? (
                   <div style={{ verticalAlign: "middle" }}>
                     <div style={{ marginTop: "5vh" }}>
                       Dzienniczek żywieniowy
                     </div>
                     <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
-                      <Flip top when={reveal.includes(value.value)}>
+                      <Flip top when={reveal.includes(value.element)}>
                         <a href="/images/dzienniczek.pdf" download>
                           Wydrkuj i przynieś na wiyztę
                         </a>
                       </Flip>
                     </div>
                   </div>
-                ) : value.value === 15 ? (
+                ) : value.element === "child" ? (
                   <div style={{ verticalAlign: "middle" }}>
                     <div style={{ marginTop: "5vh" }}>
                       Książeczka zdrowia dziecka
                     </div>
                     <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
-                      <Flip top when={reveal.includes(value.value)}>
+                      <Flip top when={reveal.includes(value.element)}>
                         <div>Dotyczy pacjentów poniżej 18. roku życia</div>
                       </Flip>
                     </div>
                   </div>
-                ) : (
+                ) : value.element === "hospital" ? (
                   <div style={{ verticalAlign: "middle" }}>
                     <div style={{ marginTop: "5vh" }}>Wypis ze szpitala</div>
                     <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
-                      <Flip top when={reveal.includes(value.value)}>
+                      <Flip top when={reveal.includes(value.element)}>
                         <div>Opcjonalne</div>
                       </Flip>
                     </div>
                   </div>
+                ) : value.element === "dress" ? (
+                  <div style={{ verticalAlign: "middle" }}>
+                    <div style={{ marginTop: "5vh" }}>
+                      Przygotowanie na badania antropometryczne
+                    </div>
+                    <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
+                      <Flip top when={reveal.includes(value.element)}>
+                        <div>
+                          (analiza impedancji bioelektrycznej) wykonywane
+                          podczas wizyty, wymagają one swobodnego odkrycia dłoni
+                          i stóp.{" "}
+                        </div>
+                      </Flip>
+                    </div>
+                  </div>
+                ) : (
+                  value.element === "info" && (
+                    <div style={{ verticalAlign: "middle" }}>
+                      <div style={{ marginTop: "5vh" }}>
+                        Informacje o przyjmowanych lekach
+                      </div>
+                      <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
+                        <Flip top when={reveal.includes(value.element)}>
+                          <div>
+                            Dotyczy pacjentów przyjmujących leki regularnie
+                          </div>
+                        </Flip>
+                      </div>
+                    </div>
+                  )
                 )}
               </div>
             )}

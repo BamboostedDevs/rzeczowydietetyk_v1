@@ -1,7 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { Grommet } from "grommet";
 
-class MyDocument extends Document {
+class _Document extends Document {
   render() {
     return (
       <Html lang="pl">
@@ -26,9 +26,9 @@ class MyDocument extends Document {
           <meta
             property="og:description"
             content="Dietetyk kliniczny - Kontakt, blog, informacje i umawianie wizyt"
-          ></meta>
+          />
           <meta property="og:url" content="https://rzeczowydietetyk.now.sh/" />
-          <meta property="og:image" content="/images/owocnewarzywa.svg"></meta>
+          <meta property="og:image" content="/images/owocnewarzywa.svg" />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="manifest" href="/manifest.json" />
@@ -51,4 +51,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default _Document;

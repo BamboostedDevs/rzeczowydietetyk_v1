@@ -1,3 +1,4 @@
+import React from "react";
 import Carousel from "react-multi-carousel";
 import { Image } from "semantic-ui-react";
 
@@ -19,11 +20,13 @@ const responsive = {
   }
 };
 const images = [
+  "/images/6.jpeg",
+  "/images/7.jpeg",
   "/images/1.jpg",
   "/images/2.jpg",
-  "/images/3.jpg",
   "/images/4.jpg",
-  "/images/5.jpg"
+  "/images/5.jpg",
+  "/images/3.jpg"
 ];
 
 // Because this is an inframe, so the SSR mode doesn't not do well here.
@@ -37,7 +40,7 @@ const Simple = ({ deviceType }: { deviceType: string }) => {
       itemClass="image-item"
       responsive={responsive}
     >
-      {images.slice(0, 5).map(image => {
+      {images.slice(0, images.length).map(image => {
         return (
           <Image
             draggable={false}
