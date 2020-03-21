@@ -182,7 +182,7 @@ function Large() {
           position: fixed;
           z-index: -10;
           top: 0;
-          height: 100vh;
+          width: 100vw;
         }
         .bringwithu {
           text-align: center;
