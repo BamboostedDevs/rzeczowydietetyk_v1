@@ -101,7 +101,12 @@ class _Document extends Document {
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#70b6f1" />
           <meta property="og:url" content="https://rzeczowydietetyk.com/" />
-          <meta property="og:image" content="/images/bggraphics.svg" />
+          <meta
+            property="og:image"
+            content="https://rzeczowydietetyk.com/images/bggraphics.png"
+          />
+          <meta property="og:image:width" content="8006" />
+          <meta property="og:image:height" content="4506" />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="manifest" href="/manifest.json" />
