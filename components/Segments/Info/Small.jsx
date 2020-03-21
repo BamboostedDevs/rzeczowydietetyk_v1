@@ -182,13 +182,7 @@ function Large() {
           position: fixed;
           z-index: -10;
           top: 0;
-          height: 100%;
-        }
-        .fixed-img-over {
-          position: fixed;
-          z-index: -1;
-          top: 0;
-          height: 100%;
+          height: 100vh;
         }
         .bringwithu {
           text-align: center;
