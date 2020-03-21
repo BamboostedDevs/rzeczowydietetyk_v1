@@ -19,6 +19,13 @@ class _Document extends Document {
             name="keywords"
             content="diety, diets, dietetyk, radom, polska, rzeczowy, dietetyk, rzeczowy dietetyk, Rzeczowy Dietetyk, RzeczowyDietetyk, rzeczowydietetyk.com, RzeczowyDietetyk.com, porady, dietetyczne, poradnia, pomoc, choroby, w, chorobach, nadciśnienie, zaburzenia profilu lipidowego, miażdżyca, alergie, alergia, allergy, pokarmowe, dna, moczanowa, gigrena, insulinoodporność, hipoglikemia, cukrzyca, choroby, autoimmunologiczne, hashimoto, łuszczyca, reumatoidalne, zapalenie, stawów, choroba, gravesa, basedowa, toczeń, rumieniowaty, układowy, nadczynność, niedoczynność, tarczycy, tarczyca, zaburzenia, funkjonowanie, funkcjonowania, układ, pokarmowy, refluks, żołądkowo, przełykowy, żołądek, dwunastniczy, jelia, jelito, drażliwe, drażliwego, zespół, ibs, niealkoholowe, alkohol, stłuszczenie, wątroba, wątroby, niedożywienie, anoreksja, nowotwory, osteoporoza, otyłość, chudnięcie, jak, schudnąć, żywienie, zdrowe, dojelitowe, pozajelitowe, jelitowe, fit"
           />
+          <meta property="og:image" content="/images/graphic.jpg" />
+          <meta property="og:url" content="https://rzeczowydietetyk.com/" />
+          <meta
+            property="og:image:secure_url"
+            content="https://rzeczowydietetyk.com/images/graphic.jpg"
+          />
+          <meta property="og:image:type" content="image/jpeg" />
           <meta
             property="og:title"
             content="Rzeczowy Dietetyk - Dietetyk, Radom"
@@ -100,18 +107,6 @@ class _Document extends Document {
           <meta name="msapplication-TileColor" content="#70b6f1" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
           <meta name="theme-color" content="#70b6f1" />
-          <meta property="og:url" content="https://rzeczowydietetyk.com/" />
-          <meta
-            property="og:image"
-            content="https://rzeczowydietetyk.com/images/graphics.png"
-          />
-          <meta
-            property="og:image:secure_url"
-            content="https://rzeczowydietetyk.com/images/graphics.png"
-          />
-          <meta property="og:image:type" content="image/png" />
-          <meta property="og:image:width" content="4500" />
-          <meta property="og:image:height" content="4500" />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="manifest" href="/manifest.json" />
