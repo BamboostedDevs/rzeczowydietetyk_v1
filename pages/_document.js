@@ -103,8 +103,15 @@ class _Document extends Document {
           <meta property="og:url" content="https://rzeczowydietetyk.com/" />
           <meta
             property="og:image"
-            content="https://rzeczowydietetyk.com/images/bggraphics.png"
+            content="https://rzeczowydietetyk.com/images/graphics.png"
           />
+          <meta
+            property="og:image:secure_url"
+            content="https://rzeczowydietetyk.com/images/graphics.png"
+          />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="4500" />
+          <meta property="og:image:height" content="4500" />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="manifest" href="/manifest.json" />
