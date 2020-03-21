@@ -47,6 +47,28 @@ export default class Layout extends PureComponent<Props> {
             -ms-user-select: none;
             user-select: none;
           }
+
+          ::-webkit-scrollbar-track {
+            background-color: rgba(255, 250, 240, 0.75);
+          }
+
+          ::-webkit-scrollbar {
+            width: 8px;
+            background-color: rgba(255, 250, 240, 0.75);
+          }
+
+          ::-webkit-scrollbar-thumb {
+            background-color: #459bf9;
+
+            background-image: -webkit-gradient(
+              linear,
+              0 0,
+              0 100%,
+              color-stop(0.5, rgba(255, 255, 255, 0.2)),
+              color-stop(0.5, transparent),
+              to(transparent)
+            );
+          }
         `}</style>
       </>
     );

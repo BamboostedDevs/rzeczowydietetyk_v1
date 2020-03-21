@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import dynamic from "next/dynamic";
 
 import { StickyContainer } from "react-sticky";
@@ -5,7 +6,6 @@ import { StickyContainer } from "react-sticky";
 import IsVisible from "react-is-visible";
 
 import navbarContainer from "../containers/navbar";
-import { Component } from "react";
 import { Home, Welcome, Info, Contact, Loading } from "../components/Segments";
 
 const Header = dynamic(() => import("../components/Header"), {

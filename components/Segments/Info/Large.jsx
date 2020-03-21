@@ -94,7 +94,7 @@ function Large() {
                     <div style={{ fontSize: "3vh", marginTop: "2vh" }}>
                       <Flip top when={reveal.includes(value.element)}>
                         <a href="/images/dzienniczek.pdf" download>
-                          Wydrkuj i przynieś na wiyztę
+                          Wydrkuj, wypełnij i przynieś na wiyztę
                         </a>
                       </Flip>
                     </div>

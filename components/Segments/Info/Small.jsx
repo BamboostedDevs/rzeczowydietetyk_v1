@@ -97,7 +97,7 @@ function Large() {
                     <div style={{ fontSize: "2vh", marginTop: "2vh" }}>
                       <Flip top>
                         <a href="/images/dzienniczek.pdf" download>
-                          Wydrkuj i przynieś na wiyztę
+                          Wydrkuj, wypełnij i przynieś na wiyztę
                         </a>
                       </Flip>
                     </div>
