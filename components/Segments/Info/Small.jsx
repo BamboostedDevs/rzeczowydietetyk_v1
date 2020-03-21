@@ -8,8 +8,7 @@ function Large() {
   const [amplified, amplify] = useState(null);
 
   return (
-    <>
-      <img className="fixed-img" alt="office" src="images/office_mobile.jpg" />
+    <div className="fixed-img">
       <div style={{ fontFamily: "Rajdhani" }}>
         <div style={{ height: "20vh" }} />
         <div
@@ -178,11 +177,20 @@ function Large() {
         <div style={{ height: "40vh" }} />
       </div>
       <style jsx>{`
-        .fixed-img {
+        .fixed-img:before {
+          content: "";
+          display: block;
           position: fixed;
-          z-index: -10;
+          left: 0;
           top: 0;
-          width: 100vw;
+          width: 100%;
+          height: 100%;
+          z-index: -10;
+          background: url(images/office_mobile.jpg) no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
         }
         .bringwithu {
           text-align: center;
@@ -206,7 +214,7 @@ function Large() {
           display: inherit;
         }
       `}</style>
-    </>
+    </div>
   );
 }
 
