@@ -13,7 +13,7 @@ class _Document extends Document {
           />
           <meta
             name="description"
-            content="Oficjalna strona internetowa RzeczowyDietetyk.com - kontakt, blog, profesjonalne rady, informacje, umawianie wizyt. (Poradnia Dietetyczna, Radom)"
+            content="Oficjalna strona internetowa Rzeczowego Dietetyka - kontakt, blog, profesjonalne rady, informacje, umawianie wizyt. (Rzeczowydietetyk - Poradnia Dietetyczna, Polmedic, Radom)"
           />
           <meta
             name="keywords"
