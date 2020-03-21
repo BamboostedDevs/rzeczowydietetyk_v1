@@ -19,13 +19,9 @@ class _Document extends Document {
             name="keywords"
             content="diety, diets, dietetyk, radom, polska, rzeczowy, dietetyk, rzeczowy dietetyk, Rzeczowy Dietetyk, RzeczowyDietetyk, rzeczowydietetyk.com, RzeczowyDietetyk.com, porady, dietetyczne, poradnia, pomoc, choroby, w, chorobach, nadciśnienie, zaburzenia profilu lipidowego, miażdżyca, alergie, alergia, allergy, pokarmowe, dna, moczanowa, gigrena, insulinoodporność, hipoglikemia, cukrzyca, choroby, autoimmunologiczne, hashimoto, łuszczyca, reumatoidalne, zapalenie, stawów, choroba, gravesa, basedowa, toczeń, rumieniowaty, układowy, nadczynność, niedoczynność, tarczycy, tarczyca, zaburzenia, funkjonowanie, funkcjonowania, układ, pokarmowy, refluks, żołądkowo, przełykowy, żołądek, dwunastniczy, jelia, jelito, drażliwe, drażliwego, zespół, ibs, niealkoholowe, alkohol, stłuszczenie, wątroba, wątroby, niedożywienie, anoreksja, nowotwory, osteoporoza, otyłość, chudnięcie, jak, schudnąć, żywienie, zdrowe, dojelitowe, pozajelitowe, jelitowe, fit"
           />
-          <meta property="og:image" content="/images/graphic.jpg" />
+
+          <meta property="og:type" content="website" />
           <meta property="og:url" content="https://rzeczowydietetyk.com/" />
-          <meta
-            property="og:image:secure_url"
-            content="https://rzeczowydietetyk.com/images/graphic.jpg"
-          />
-          <meta property="og:image:type" content="image/jpeg" />
           <meta
             property="og:title"
             content="Rzeczowy Dietetyk - Dietetyk, Radom"
@@ -34,6 +30,29 @@ class _Document extends Document {
             property="og:description"
             content="Dietetyk kliniczny - Kontakt, blog, informacje i umawianie wizyt"
           />
+          <meta
+            property="og:image"
+            content="https://rzeczowydietetyk.com/images/og.png"
+          />
+
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta
+            property="twitter:url"
+            content="https://rzeczowydietetyk.com/"
+          />
+          <meta
+            property="twitter:title"
+            content="Rzeczowy Dietetyk - Dietetyk, Radom"
+          />
+          <meta
+            property="twitter:description"
+            content="Dietetyk kliniczny - Kontakt, blog, informacje i umawianie wizyt"
+          />
+          <meta
+            property="twitter:image"
+            content="https://rzeczowydietetyk.com/images/og.png"
+          />
+
           <link
             rel="apple-touch-icon"
             sizes="57x57"
@@ -110,7 +129,6 @@ class _Document extends Document {
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="manifest" href="/manifest.json" />
-          <meta property="og:locale" content="pl_PL" />
           <meta name="language" content="PL" />
           <meta name="author" content="bamboosted team" />
         </Head>

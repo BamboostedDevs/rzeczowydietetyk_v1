@@ -9,6 +9,7 @@ export default function MyApp({ Component, pageProps }) {
     <Layout>
       <Component {...pageProps} />
       <div style={{ display: "none" }}>
+        <img src="/images/og.png" />
         <img src="/images/avocadoT.svg" />
         <img src="/images/cover.jpg" />
         <img src="/images/office_web.jpg" />
