@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { Grommet } from "grommet";
+import config from "../package.json";
 
 class _Document extends Document {
   render() {
@@ -11,46 +12,23 @@ class _Document extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1 user-scalable=no"
           />
-          <meta
-            name="description"
-            content="Oficjalna strona internetowa Rzeczowego Dietetyka - kontakt, blog, profesjonalne rady, informacje, umawianie wizyt. (Rzeczowydietetyk - Poradnia Dietetyczna, Polmedic, Radom)"
-          />
-          <meta
-            name="keywords"
-            content="diety, diets, dietetyk, radom, polska, rzeczowy, dietetyk, rzeczowy dietetyk, Rzeczowy Dietetyk, RzeczowyDietetyk, rzeczowydietetyk.com, RzeczowyDietetyk.com, porady, dietetyczne, poradnia, pomoc, choroby, w, chorobach, nadciśnienie, zaburzenia profilu lipidowego, miażdżyca, alergie, alergia, allergy, pokarmowe, dna, moczanowa, gigrena, insulinoodporność, hipoglikemia, cukrzyca, choroby, autoimmunologiczne, hashimoto, łuszczyca, reumatoidalne, zapalenie, stawów, choroba, gravesa, basedowa, toczeń, rumieniowaty, układowy, nadczynność, niedoczynność, tarczycy, tarczyca, zaburzenia, funkjonowanie, funkcjonowania, układ, pokarmowy, refluks, żołądkowo, przełykowy, żołądek, dwunastniczy, jelia, jelito, drażliwe, drażliwego, zespół, ibs, niealkoholowe, alkohol, stłuszczenie, wątroba, wątroby, niedożywienie, anoreksja, nowotwory, osteoporoza, otyłość, chudnięcie, jak, schudnąć, żywienie, zdrowe, dojelitowe, pozajelitowe, jelitowe, fit"
-          />
-
+          <meta name="description" content={config.description} />
+          <meta name="keywords" content={config.keywords} />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://rzeczowydietetyk.com/" />
-          <meta
-            property="og:title"
-            content="Rzeczowy Dietetyk - Dietetyk, Radom"
-          />
-          <meta
-            property="og:description"
-            content="Dietetyk kliniczny - Kontakt, blog, informacje i umawianie wizyt"
-          />
+          <meta property="og:url" content={config.configuration.url} />
+          <meta property="og:title" content={config.configuration.title} />
+          <meta property="og:description" content={config.description} />
           <meta
             property="og:image"
-            content="https://rzeczowydietetyk.com/images/og.png"
+            content={config.configuration.url + "images/og.png"}
           />
-
           <meta property="twitter:card" content="summary_large_image" />
-          <meta
-            property="twitter:url"
-            content="https://rzeczowydietetyk.com/"
-          />
-          <meta
-            property="twitter:title"
-            content="Rzeczowy Dietetyk - Dietetyk, Radom"
-          />
-          <meta
-            property="twitter:description"
-            content="Dietetyk kliniczny - Kontakt, blog, informacje i umawianie wizyt"
-          />
+          <meta property="twitter:url" content={config.configuration.url} />
+          <meta property="twitter:title" content={config.configuration.title} />
+          <meta property="twitter:description" content={config.description} />
           <meta
             property="twitter:image"
-            content="https://rzeczowydietetyk.com/images/og.png"
+            content={config.configuration.url + "images/og.png"}
           />
 
           <link
@@ -125,12 +103,12 @@ class _Document extends Document {
           <link rel="manifest" href="/manifest.json" />
           <meta name="msapplication-TileColor" content="#70b6f1" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-          <meta name="theme-color" content="#70b6f1" />
+          <meta name="theme-color" content={config.configuration.color} />
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
           <link rel="manifest" href="/manifest.json" />
-          <meta name="language" content="PL" />
-          <meta name="author" content="bamboosted team" />
+          <meta name="language" content={config.configuration.language} />
+          <meta name="author" content={config.author} />
         </Head>
         <body>
           <Grommet plain>
