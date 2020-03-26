@@ -20,15 +20,15 @@ const responsive = {
   }
 };
 const images = [
-  "/images/6.1.jpeg",
-  "/images/6.2.jpeg",
-  "/images/7.1.jpeg",
-  "/images/7.2.jpeg",
+  // "/images/6.1.jpeg",
+  // "/images/6.2.jpeg",
+  // "/images/7.1.jpeg",
+  // "/images/7.2.jpeg",
   "/images/1.jpg",
   "/images/2.jpg",
   "/images/4.jpg",
-  "/images/5.jpg",
-  "/images/3.jpg"
+  "/images/5.jpg"
+  // "/images/3.jpg"
 ];
 
 // Because this is an inframe, so the SSR mode doesn't not do well here.
